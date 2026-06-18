@@ -1,0 +1,61 @@
+project:
+  name: Tower Painting Descent Demo
+  owner: Amina
+  site: Training Tower
+
+workers:
+  - name: Safety crew
+    skills: [inspection, safety_spotting, harness_check]
+    max_effort: 8
+  - name: Site assistant
+    skills: [cleanup, tool_setup]
+    max_effort: 5
+
+robot:
+  name: RBT-01
+  capabilities: [ride_vehicle, paint_exterior, site_scan, cleanup]
+  payload_kg: 20
+
+zones:
+  - id: top_landing
+    label: Tower top landing
+    position: [0.4, 1.2]
+  - id: descent_rail
+    label: Exterior descent rail
+    position: [0.4, 0.0]
+  - id: bottom_landing
+    label: Tower bottom landing
+    position: [0.4, -1.2]
+  - id: inspection
+    label: Safety inspection point
+    position: [-1.2, 0.0]
+
+tasks:
+  - id: inspect_vehicle
+    title: Inspect moving vehicle
+    zone: inspection
+    required_skill: inspection
+    effort: 2
+    risk: high
+    dependencies: []
+  - id: check_platform
+    title: Check robot standing platform
+    zone: top_landing
+    required_skill: safety_spotting
+    effort: 2
+    risk: medium
+    dependencies: [inspect_vehicle]
+  - id: paint_while_descending
+    title: Paint tower while vehicle descends
+    zone: descent_rail
+    required_skill: paint_exterior
+    effort: 3
+    risk: medium
+    dependencies: [check_platform]
+  - id: confirm_arrival
+    title: Confirm bottom landing arrival
+    zone: bottom_landing
+    required_skill: inspection
+    effort: 1
+    risk: low
+    dependencies: [paint_while_descending]
