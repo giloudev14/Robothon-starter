@@ -6,7 +6,7 @@ Registration UUID: `c84e57d8-ca0d-4383-8b36-de63393e7c3e`
 
 ## Project Summary · 项目说明
 
-- **Project name · 项目名称**: Construction Co-working - Tower painting descent task
+- **Project name · 项目名称**: Tower painting descent task
 - **Robot platform · 机器人平台**: Unitree G1 humanoid with articulated hands, using MuJoCo Menagerie `g1_with_hands.xml`
 - **Task goal · 任务目标**: Simulate a Unitree G1 robot standing in a moving vehicle that descends a tower while a roller touches and paints the building wall.
 - **Technical approach · 技术方案**: MuJoCo MJCF scene generation, Menagerie `g1_with_hands.xml` include, scripted vehicle descent, standing robot pose, tower/landing/rail geometry, hand-held roller, paint bucket, articulated finger closure, progressive paint swaths, and optional video export.

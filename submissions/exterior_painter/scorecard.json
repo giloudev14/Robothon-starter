@@ -1,6 +1,6 @@
 {
   "score": 90,
-  "project": "Construction Co-working - Tower painting descent task",
+  "project": "Tower painting descent task",
   "recommendation": "Simple, stable MuJoCo demo: a standing G1 rides a moving vehicle down a tower while a roller paints the wall.",
   "categories": {
     "01_runnability": {
