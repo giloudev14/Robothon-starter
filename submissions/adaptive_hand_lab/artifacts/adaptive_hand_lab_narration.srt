@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:10,000
+Workspace scan and visual-servo alignment.
+
+2
+00:00:10,000 --> 00:00:25,000
+Five-finger adaptive grasp closes around the vial.
+
+3
+00:00:25,000 --> 00:00:42,000
+Thumb opposition rotates the cap while contact balance is maintained.
+
+4
+00:00:42,000 --> 00:01:00,000
+The vial is inserted, audited, and recovered from a slip disturbance.

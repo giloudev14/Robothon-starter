@@ -1,0 +1,31 @@
+{
+  "controller": "minimum-jerk stage planner plus visual-servo/contact/slip residual policy",
+  "inputs": [
+    "palm_pos",
+    "vial_pos",
+    "cap_pos",
+    "pod_pos",
+    "button_depth",
+    "five touch sensors"
+  ],
+  "outputs": [
+    "gantry xyz",
+    "wrist yaw",
+    "20 finger joint targets",
+    "audit button actuator"
+  ],
+  "actuated_channels": 25,
+  "hand_topology": "five-finger dexterous hand with thumb opposition",
+  "closed_loop_evidence": {
+    "controller": "minimum-jerk stage planner plus visual-servo/contact/slip residual policy",
+    "raw_median_visual_servo_error_m": 0.01908,
+    "median_visual_servo_error_m": 0.00577,
+    "servo_error_reduction_pct": 69.76,
+    "final_slip_observer_error_mm": 0.059,
+    "max_slip_observer_error_mm": 24.0,
+    "mean_policy_confidence": 0.7894,
+    "residual_corrections_applied": 430,
+    "stable_five_finger_samples": 227
+  },
+  "disturbance_protocol": "40 fixed-seed pose, cap-friction, and slip perturbation rollouts"
+}

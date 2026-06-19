@@ -1,0 +1,6079 @@
+{
+  "finger_order": [
+    "thumb",
+    "index",
+    "middle",
+    "ring",
+    "little"
+  ],
+  "sample_count": 433,
+  "summary": {
+    "max_active_fingers": 5,
+    "stable_contact_duration_s": 45.4,
+    "recovery_window_samples": 40
+  },
+  "samples": [
+    {
+      "time_s": 0.0,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 24.0
+    },
+    {
+      "time_s": 0.167,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.944
+    },
+    {
+      "time_s": 0.333,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.889
+    },
+    {
+      "time_s": 0.5,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.833
+    },
+    {
+      "time_s": 0.667,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.778
+    },
+    {
+      "time_s": 0.833,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.722
+    },
+    {
+      "time_s": 1.0,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.666
+    },
+    {
+      "time_s": 1.167,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.611
+    },
+    {
+      "time_s": 1.333,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.555
+    },
+    {
+      "time_s": 1.5,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.5
+    },
+    {
+      "time_s": 1.667,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.444
+    },
+    {
+      "time_s": 1.833,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.388
+    },
+    {
+      "time_s": 2.0,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.333
+    },
+    {
+      "time_s": 2.167,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.277
+    },
+    {
+      "time_s": 2.333,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.222
+    },
+    {
+      "time_s": 2.5,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.166
+    },
+    {
+      "time_s": 2.667,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.11
+    },
+    {
+      "time_s": 2.833,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 23.055
+    },
+    {
+      "time_s": 3.0,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.999
+    },
+    {
+      "time_s": 3.167,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.944
+    },
+    {
+      "time_s": 3.333,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.888
+    },
+    {
+      "time_s": 3.5,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.832
+    },
+    {
+      "time_s": 3.667,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.777
+    },
+    {
+      "time_s": 3.833,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.721
+    },
+    {
+      "time_s": 4.0,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.666
+    },
+    {
+      "time_s": 4.167,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.61
+    },
+    {
+      "time_s": 4.333,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.554
+    },
+    {
+      "time_s": 4.5,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.499
+    },
+    {
+      "time_s": 4.667,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.443
+    },
+    {
+      "time_s": 4.833,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.388
+    },
+    {
+      "time_s": 5.0,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.332
+    },
+    {
+      "time_s": 5.167,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.276
+    },
+    {
+      "time_s": 5.333,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.221
+    },
+    {
+      "time_s": 5.5,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.165
+    },
+    {
+      "time_s": 5.667,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.11
+    },
+    {
+      "time_s": 5.833,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 22.054
+    },
+    {
+      "time_s": 6.0,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.998
+    },
+    {
+      "time_s": 6.167,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.943
+    },
+    {
+      "time_s": 6.333,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.887
+    },
+    {
+      "time_s": 6.5,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.832
+    },
+    {
+      "time_s": 6.667,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.776
+    },
+    {
+      "time_s": 6.833,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.72
+    },
+    {
+      "time_s": 7.0,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.665
+    },
+    {
+      "time_s": 7.167,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.609
+    },
+    {
+      "time_s": 7.333,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.554
+    },
+    {
+      "time_s": 7.5,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.498
+    },
+    {
+      "time_s": 7.667,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.442
+    },
+    {
+      "time_s": 7.833,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.387
+    },
+    {
+      "time_s": 8.0,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.331
+    },
+    {
+      "time_s": 8.167,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.276
+    },
+    {
+      "time_s": 8.333,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.22
+    },
+    {
+      "time_s": 8.5,
+      "phase": "scan",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.164
+    },
+    {
+      "time_s": 8.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.109
+    },
+    {
+      "time_s": 8.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 21.053
+    },
+    {
+      "time_s": 9.0,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.998
+    },
+    {
+      "time_s": 9.167,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.942
+    },
+    {
+      "time_s": 9.333,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.886
+    },
+    {
+      "time_s": 9.5,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.831
+    },
+    {
+      "time_s": 9.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.775
+    },
+    {
+      "time_s": 9.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.72
+    },
+    {
+      "time_s": 10.0,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.664
+    },
+    {
+      "time_s": 10.167,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.608
+    },
+    {
+      "time_s": 10.333,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.553
+    },
+    {
+      "time_s": 10.5,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.497
+    },
+    {
+      "time_s": 10.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.442
+    },
+    {
+      "time_s": 10.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.386
+    },
+    {
+      "time_s": 11.0,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.331
+    },
+    {
+      "time_s": 11.167,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.275
+    },
+    {
+      "time_s": 11.333,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.219
+    },
+    {
+      "time_s": 11.5,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.164
+    },
+    {
+      "time_s": 11.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.108
+    },
+    {
+      "time_s": 11.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 20.053
+    },
+    {
+      "time_s": 12.0,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.997
+    },
+    {
+      "time_s": 12.167,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.941
+    },
+    {
+      "time_s": 12.333,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.886
+    },
+    {
+      "time_s": 12.5,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.83
+    },
+    {
+      "time_s": 12.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.775
+    },
+    {
+      "time_s": 12.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.719
+    },
+    {
+      "time_s": 13.0,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.663
+    },
+    {
+      "time_s": 13.167,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.608
+    },
+    {
+      "time_s": 13.333,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.552
+    },
+    {
+      "time_s": 13.5,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.497
+    },
+    {
+      "time_s": 13.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.441
+    },
+    {
+      "time_s": 13.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.385
+    },
+    {
+      "time_s": 14.0,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.33
+    },
+    {
+      "time_s": 14.167,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.274
+    },
+    {
+      "time_s": 14.333,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.219
+    },
+    {
+      "time_s": 14.5,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.163
+    },
+    {
+      "time_s": 14.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.107
+    },
+    {
+      "time_s": 14.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 19.052
+    },
+    {
+      "time_s": 15.0,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.996
+    },
+    {
+      "time_s": 15.167,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.941
+    },
+    {
+      "time_s": 15.333,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.885
+    },
+    {
+      "time_s": 15.5,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.829
+    },
+    {
+      "time_s": 15.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.774
+    },
+    {
+      "time_s": 15.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.718
+    },
+    {
+      "time_s": 16.0,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.663
+    },
+    {
+      "time_s": 16.167,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.607
+    },
+    {
+      "time_s": 16.333,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.551
+    },
+    {
+      "time_s": 16.5,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.496
+    },
+    {
+      "time_s": 16.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.44
+    },
+    {
+      "time_s": 16.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.385
+    },
+    {
+      "time_s": 17.0,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.329
+    },
+    {
+      "time_s": 17.167,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.273
+    },
+    {
+      "time_s": 17.333,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.218
+    },
+    {
+      "time_s": 17.5,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.162
+    },
+    {
+      "time_s": 17.667,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.107
+    },
+    {
+      "time_s": 17.833,
+      "phase": "approach",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 18.051
+    },
+    {
+      "time_s": 18.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.0,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "active_fingers": 0,
+      "contact_balance": 1.0,
+      "slip_observer_error_mm": 17.995
+    },
+    {
+      "time_s": 18.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.001,
+        "index": 0.001,
+        "middle": 0.001,
+        "ring": 0.001,
+        "little": 0.001
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9999,
+      "slip_observer_error_mm": 17.94
+    },
+    {
+      "time_s": 18.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.003,
+        "index": 0.003,
+        "middle": 0.004,
+        "ring": 0.003,
+        "little": 0.003
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9998,
+      "slip_observer_error_mm": 17.884
+    },
+    {
+      "time_s": 18.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.007,
+        "index": 0.008,
+        "middle": 0.008,
+        "ring": 0.007,
+        "little": 0.006
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9995,
+      "slip_observer_error_mm": 17.829
+    },
+    {
+      "time_s": 18.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.012,
+        "index": 0.013,
+        "middle": 0.014,
+        "ring": 0.012,
+        "little": 0.011
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9991,
+      "slip_observer_error_mm": 17.773
+    },
+    {
+      "time_s": 18.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.018,
+        "index": 0.02,
+        "middle": 0.021,
+        "ring": 0.019,
+        "little": 0.017
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9987,
+      "slip_observer_error_mm": 17.717
+    },
+    {
+      "time_s": 19.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.026,
+        "index": 0.029,
+        "middle": 0.03,
+        "ring": 0.027,
+        "little": 0.024
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9981,
+      "slip_observer_error_mm": 17.662
+    },
+    {
+      "time_s": 19.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.035,
+        "index": 0.038,
+        "middle": 0.04,
+        "ring": 0.036,
+        "little": 0.033
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9974,
+      "slip_observer_error_mm": 17.606
+    },
+    {
+      "time_s": 19.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.045,
+        "index": 0.049,
+        "middle": 0.051,
+        "ring": 0.046,
+        "little": 0.042
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9967,
+      "slip_observer_error_mm": 17.551
+    },
+    {
+      "time_s": 19.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.056,
+        "index": 0.062,
+        "middle": 0.064,
+        "ring": 0.058,
+        "little": 0.052
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9959,
+      "slip_observer_error_mm": 17.495
+    },
+    {
+      "time_s": 19.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.068,
+        "index": 0.075,
+        "middle": 0.078,
+        "ring": 0.07,
+        "little": 0.064
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.995,
+      "slip_observer_error_mm": 17.439
+    },
+    {
+      "time_s": 19.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.082,
+        "index": 0.09,
+        "middle": 0.093,
+        "ring": 0.084,
+        "little": 0.076
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.994,
+      "slip_observer_error_mm": 17.384
+    },
+    {
+      "time_s": 20.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.096,
+        "index": 0.105,
+        "middle": 0.11,
+        "ring": 0.099,
+        "little": 0.09
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.993,
+      "slip_observer_error_mm": 17.328
+    },
+    {
+      "time_s": 20.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.111,
+        "index": 0.122,
+        "middle": 0.127,
+        "ring": 0.114,
+        "little": 0.104
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9919,
+      "slip_observer_error_mm": 17.273
+    },
+    {
+      "time_s": 20.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.127,
+        "index": 0.14,
+        "middle": 0.146,
+        "ring": 0.131,
+        "little": 0.119
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9907,
+      "slip_observer_error_mm": 17.217
+    },
+    {
+      "time_s": 20.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.144,
+        "index": 0.158,
+        "middle": 0.165,
+        "ring": 0.149,
+        "little": 0.135
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9894,
+      "slip_observer_error_mm": 17.161
+    },
+    {
+      "time_s": 20.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.162,
+        "index": 0.178,
+        "middle": 0.185,
+        "ring": 0.167,
+        "little": 0.151
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9881,
+      "slip_observer_error_mm": 17.106
+    },
+    {
+      "time_s": 20.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.181,
+        "index": 0.198,
+        "middle": 0.207,
+        "ring": 0.186,
+        "little": 0.169
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9868,
+      "slip_observer_error_mm": 17.05
+    },
+    {
+      "time_s": 21.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.2,
+        "index": 0.219,
+        "middle": 0.229,
+        "ring": 0.206,
+        "little": 0.187
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9854,
+      "slip_observer_error_mm": 16.995
+    },
+    {
+      "time_s": 21.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.22,
+        "index": 0.241,
+        "middle": 0.251,
+        "ring": 0.226,
+        "little": 0.205
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9839,
+      "slip_observer_error_mm": 16.939
+    },
+    {
+      "time_s": 21.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.24,
+        "index": 0.263,
+        "middle": 0.275,
+        "ring": 0.247,
+        "little": 0.224
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9824,
+      "slip_observer_error_mm": 16.883
+    },
+    {
+      "time_s": 21.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.261,
+        "index": 0.286,
+        "middle": 0.299,
+        "ring": 0.269,
+        "little": 0.244
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9809,
+      "slip_observer_error_mm": 16.828
+    },
+    {
+      "time_s": 21.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.283,
+        "index": 0.31,
+        "middle": 0.324,
+        "ring": 0.291,
+        "little": 0.264
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9793,
+      "slip_observer_error_mm": 16.772
+    },
+    {
+      "time_s": 21.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.305,
+        "index": 0.334,
+        "middle": 0.349,
+        "ring": 0.314,
+        "little": 0.285
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9777,
+      "slip_observer_error_mm": 16.717
+    },
+    {
+      "time_s": 22.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.328,
+        "index": 0.359,
+        "middle": 0.375,
+        "ring": 0.337,
+        "little": 0.306
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.976,
+      "slip_observer_error_mm": 16.661
+    },
+    {
+      "time_s": 22.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.351,
+        "index": 0.384,
+        "middle": 0.401,
+        "ring": 0.361,
+        "little": 0.327
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9744,
+      "slip_observer_error_mm": 16.605
+    },
+    {
+      "time_s": 22.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.374,
+        "index": 0.409,
+        "middle": 0.427,
+        "ring": 0.385,
+        "little": 0.349
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9727,
+      "slip_observer_error_mm": 16.55
+    },
+    {
+      "time_s": 22.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.397,
+        "index": 0.435,
+        "middle": 0.454,
+        "ring": 0.409,
+        "little": 0.371
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9709,
+      "slip_observer_error_mm": 16.494
+    },
+    {
+      "time_s": 22.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.421,
+        "index": 0.461,
+        "middle": 0.481,
+        "ring": 0.433,
+        "little": 0.393
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9692,
+      "slip_observer_error_mm": 16.439
+    },
+    {
+      "time_s": 22.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.445,
+        "index": 0.488,
+        "middle": 0.509,
+        "ring": 0.458,
+        "little": 0.416
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9674,
+      "slip_observer_error_mm": 16.383
+    },
+    {
+      "time_s": 23.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.469,
+        "index": 0.514,
+        "middle": 0.536,
+        "ring": 0.483,
+        "little": 0.438
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9657,
+      "slip_observer_error_mm": 16.327
+    },
+    {
+      "time_s": 23.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.494,
+        "index": 0.541,
+        "middle": 0.564,
+        "ring": 0.508,
+        "little": 0.461
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9639,
+      "slip_observer_error_mm": 16.272
+    },
+    {
+      "time_s": 23.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.518,
+        "index": 0.567,
+        "middle": 0.592,
+        "ring": 0.533,
+        "little": 0.483
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9621,
+      "slip_observer_error_mm": 16.216
+    },
+    {
+      "time_s": 23.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.542,
+        "index": 0.594,
+        "middle": 0.62,
+        "ring": 0.558,
+        "little": 0.506
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9603,
+      "slip_observer_error_mm": 16.161
+    },
+    {
+      "time_s": 23.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.567,
+        "index": 0.62,
+        "middle": 0.647,
+        "ring": 0.583,
+        "little": 0.529
+      },
+      "active_fingers": 2,
+      "contact_balance": 0.9586,
+      "slip_observer_error_mm": 16.105
+    },
+    {
+      "time_s": 23.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.591,
+        "index": 0.647,
+        "middle": 0.675,
+        "ring": 0.608,
+        "little": 0.551
+      },
+      "active_fingers": 2,
+      "contact_balance": 0.9568,
+      "slip_observer_error_mm": 16.049
+    },
+    {
+      "time_s": 24.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.615,
+        "index": 0.673,
+        "middle": 0.703,
+        "ring": 0.632,
+        "little": 0.574
+      },
+      "active_fingers": 3,
+      "contact_balance": 0.955,
+      "slip_observer_error_mm": 15.994
+    },
+    {
+      "time_s": 24.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.639,
+        "index": 0.7,
+        "middle": 0.73,
+        "ring": 0.657,
+        "little": 0.596
+      },
+      "active_fingers": 4,
+      "contact_balance": 0.9533,
+      "slip_observer_error_mm": 15.938
+    },
+    {
+      "time_s": 24.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.662,
+        "index": 0.725,
+        "middle": 0.757,
+        "ring": 0.681,
+        "little": 0.618
+      },
+      "active_fingers": 4,
+      "contact_balance": 0.9516,
+      "slip_observer_error_mm": 15.883
+    },
+    {
+      "time_s": 24.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.686,
+        "index": 0.751,
+        "middle": 0.784,
+        "ring": 0.705,
+        "little": 0.64
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9498,
+      "slip_observer_error_mm": 15.827
+    },
+    {
+      "time_s": 24.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.709,
+        "index": 0.776,
+        "middle": 0.81,
+        "ring": 0.729,
+        "little": 0.662
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9482,
+      "slip_observer_error_mm": 15.771
+    },
+    {
+      "time_s": 24.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.732,
+        "index": 0.801,
+        "middle": 0.836,
+        "ring": 0.753,
+        "little": 0.683
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9465,
+      "slip_observer_error_mm": 15.716
+    },
+    {
+      "time_s": 25.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.754,
+        "index": 0.826,
+        "middle": 0.862,
+        "ring": 0.776,
+        "little": 0.704
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9449,
+      "slip_observer_error_mm": 15.66
+    },
+    {
+      "time_s": 25.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.776,
+        "index": 0.85,
+        "middle": 0.887,
+        "ring": 0.798,
+        "little": 0.724
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9433,
+      "slip_observer_error_mm": 15.605
+    },
+    {
+      "time_s": 25.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.797,
+        "index": 0.873,
+        "middle": 0.911,
+        "ring": 0.82,
+        "little": 0.744
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9417,
+      "slip_observer_error_mm": 15.549
+    },
+    {
+      "time_s": 25.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.818,
+        "index": 0.896,
+        "middle": 0.935,
+        "ring": 0.842,
+        "little": 0.764
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9402,
+      "slip_observer_error_mm": 15.493
+    },
+    {
+      "time_s": 25.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.839,
+        "index": 0.918,
+        "middle": 0.958,
+        "ring": 0.862,
+        "little": 0.783
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9387,
+      "slip_observer_error_mm": 15.438
+    },
+    {
+      "time_s": 25.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.858,
+        "index": 0.94,
+        "middle": 0.981,
+        "ring": 0.883,
+        "little": 0.801
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9372,
+      "slip_observer_error_mm": 15.382
+    },
+    {
+      "time_s": 26.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.877,
+        "index": 0.961,
+        "middle": 1.0,
+        "ring": 0.902,
+        "little": 0.819
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9365,
+      "slip_observer_error_mm": 15.327
+    },
+    {
+      "time_s": 26.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.895,
+        "index": 0.981,
+        "middle": 1.0,
+        "ring": 0.921,
+        "little": 0.836
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9407,
+      "slip_observer_error_mm": 15.271
+    },
+    {
+      "time_s": 26.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.913,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 0.939,
+        "little": 0.852
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.944,
+      "slip_observer_error_mm": 15.215
+    },
+    {
+      "time_s": 26.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.929,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 0.956,
+        "little": 0.867
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9505,
+      "slip_observer_error_mm": 15.16
+    },
+    {
+      "time_s": 26.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.945,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 0.972,
+        "little": 0.882
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9561,
+      "slip_observer_error_mm": 15.104
+    },
+    {
+      "time_s": 26.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.96,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 0.987,
+        "little": 0.896
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9608,
+      "slip_observer_error_mm": 15.049
+    },
+    {
+      "time_s": 27.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.974,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.909
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9647,
+      "slip_observer_error_mm": 14.993
+    },
+    {
+      "time_s": 27.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.987,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.921
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9693,
+      "slip_observer_error_mm": 14.937
+    },
+    {
+      "time_s": 27.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 0.999,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.932
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9729,
+      "slip_observer_error_mm": 14.882
+    },
+    {
+      "time_s": 27.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.942
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9768,
+      "slip_observer_error_mm": 14.826
+    },
+    {
+      "time_s": 27.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.951
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9804,
+      "slip_observer_error_mm": 14.771
+    },
+    {
+      "time_s": 27.833,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.959
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9835,
+      "slip_observer_error_mm": 14.715
+    },
+    {
+      "time_s": 28.0,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.965
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9862,
+      "slip_observer_error_mm": 14.659
+    },
+    {
+      "time_s": 28.167,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.971
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9884,
+      "slip_observer_error_mm": 14.604
+    },
+    {
+      "time_s": 28.333,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.975
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9901,
+      "slip_observer_error_mm": 14.548
+    },
+    {
+      "time_s": 28.5,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.978
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9912,
+      "slip_observer_error_mm": 14.493
+    },
+    {
+      "time_s": 28.667,
+      "phase": "adaptive_grasp",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9919,
+      "slip_observer_error_mm": 14.437
+    },
+    {
+      "time_s": 28.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 14.381
+    },
+    {
+      "time_s": 29.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 14.326
+    },
+    {
+      "time_s": 29.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 14.27
+    },
+    {
+      "time_s": 29.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 14.215
+    },
+    {
+      "time_s": 29.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 14.159
+    },
+    {
+      "time_s": 29.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 14.103
+    },
+    {
+      "time_s": 29.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 14.048
+    },
+    {
+      "time_s": 30.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.992
+    },
+    {
+      "time_s": 30.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.937
+    },
+    {
+      "time_s": 30.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.881
+    },
+    {
+      "time_s": 30.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.825
+    },
+    {
+      "time_s": 30.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.77
+    },
+    {
+      "time_s": 30.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.714
+    },
+    {
+      "time_s": 31.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.659
+    },
+    {
+      "time_s": 31.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.603
+    },
+    {
+      "time_s": 31.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.547
+    },
+    {
+      "time_s": 31.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.492
+    },
+    {
+      "time_s": 31.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.436
+    },
+    {
+      "time_s": 31.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.381
+    },
+    {
+      "time_s": 32.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.325
+    },
+    {
+      "time_s": 32.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.269
+    },
+    {
+      "time_s": 32.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.214
+    },
+    {
+      "time_s": 32.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.158
+    },
+    {
+      "time_s": 32.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.103
+    },
+    {
+      "time_s": 32.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 13.047
+    },
+    {
+      "time_s": 33.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.992
+    },
+    {
+      "time_s": 33.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.936
+    },
+    {
+      "time_s": 33.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.88
+    },
+    {
+      "time_s": 33.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.825
+    },
+    {
+      "time_s": 33.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.769
+    },
+    {
+      "time_s": 33.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.714
+    },
+    {
+      "time_s": 34.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.658
+    },
+    {
+      "time_s": 34.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.602
+    },
+    {
+      "time_s": 34.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.547
+    },
+    {
+      "time_s": 34.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.491
+    },
+    {
+      "time_s": 34.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.436
+    },
+    {
+      "time_s": 34.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.38
+    },
+    {
+      "time_s": 35.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.324
+    },
+    {
+      "time_s": 35.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.269
+    },
+    {
+      "time_s": 35.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.213
+    },
+    {
+      "time_s": 35.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.158
+    },
+    {
+      "time_s": 35.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.102
+    },
+    {
+      "time_s": 35.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 12.046
+    },
+    {
+      "time_s": 36.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.991
+    },
+    {
+      "time_s": 36.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.935
+    },
+    {
+      "time_s": 36.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.88
+    },
+    {
+      "time_s": 36.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.824
+    },
+    {
+      "time_s": 36.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.768
+    },
+    {
+      "time_s": 36.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.713
+    },
+    {
+      "time_s": 37.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.657
+    },
+    {
+      "time_s": 37.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.602
+    },
+    {
+      "time_s": 37.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.546
+    },
+    {
+      "time_s": 37.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.49
+    },
+    {
+      "time_s": 37.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.435
+    },
+    {
+      "time_s": 37.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.379
+    },
+    {
+      "time_s": 38.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.324
+    },
+    {
+      "time_s": 38.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.268
+    },
+    {
+      "time_s": 38.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.212
+    },
+    {
+      "time_s": 38.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.157
+    },
+    {
+      "time_s": 38.667,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.101
+    },
+    {
+      "time_s": 38.833,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 11.046
+    },
+    {
+      "time_s": 39.0,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.99
+    },
+    {
+      "time_s": 39.167,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.934
+    },
+    {
+      "time_s": 39.333,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.879
+    },
+    {
+      "time_s": 39.5,
+      "phase": "in_hand_rotate",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.823
+    },
+    {
+      "time_s": 39.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.768
+    },
+    {
+      "time_s": 39.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.712
+    },
+    {
+      "time_s": 40.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.656
+    },
+    {
+      "time_s": 40.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.601
+    },
+    {
+      "time_s": 40.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.545
+    },
+    {
+      "time_s": 40.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.49
+    },
+    {
+      "time_s": 40.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.434
+    },
+    {
+      "time_s": 40.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.378
+    },
+    {
+      "time_s": 41.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.323
+    },
+    {
+      "time_s": 41.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.267
+    },
+    {
+      "time_s": 41.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.212
+    },
+    {
+      "time_s": 41.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.156
+    },
+    {
+      "time_s": 41.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.1
+    },
+    {
+      "time_s": 41.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 10.045
+    },
+    {
+      "time_s": 42.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.989
+    },
+    {
+      "time_s": 42.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.934
+    },
+    {
+      "time_s": 42.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.878
+    },
+    {
+      "time_s": 42.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.822
+    },
+    {
+      "time_s": 42.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.767
+    },
+    {
+      "time_s": 42.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.711
+    },
+    {
+      "time_s": 43.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.656
+    },
+    {
+      "time_s": 43.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.6
+    },
+    {
+      "time_s": 43.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.544
+    },
+    {
+      "time_s": 43.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.489
+    },
+    {
+      "time_s": 43.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.433
+    },
+    {
+      "time_s": 43.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.378
+    },
+    {
+      "time_s": 44.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.322
+    },
+    {
+      "time_s": 44.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.266
+    },
+    {
+      "time_s": 44.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.211
+    },
+    {
+      "time_s": 44.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.155
+    },
+    {
+      "time_s": 44.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.1
+    },
+    {
+      "time_s": 44.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 9.044
+    },
+    {
+      "time_s": 45.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.988
+    },
+    {
+      "time_s": 45.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.933
+    },
+    {
+      "time_s": 45.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.877
+    },
+    {
+      "time_s": 45.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.822
+    },
+    {
+      "time_s": 45.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.766
+    },
+    {
+      "time_s": 45.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.71
+    },
+    {
+      "time_s": 46.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.655
+    },
+    {
+      "time_s": 46.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.599
+    },
+    {
+      "time_s": 46.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.544
+    },
+    {
+      "time_s": 46.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.488
+    },
+    {
+      "time_s": 46.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.432
+    },
+    {
+      "time_s": 46.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.377
+    },
+    {
+      "time_s": 47.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.321
+    },
+    {
+      "time_s": 47.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.266
+    },
+    {
+      "time_s": 47.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.21
+    },
+    {
+      "time_s": 47.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.154
+    },
+    {
+      "time_s": 47.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.099
+    },
+    {
+      "time_s": 47.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 8.043
+    },
+    {
+      "time_s": 48.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.988
+    },
+    {
+      "time_s": 48.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.932
+    },
+    {
+      "time_s": 48.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.876
+    },
+    {
+      "time_s": 48.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.821
+    },
+    {
+      "time_s": 48.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.765
+    },
+    {
+      "time_s": 48.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.71
+    },
+    {
+      "time_s": 49.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.654
+    },
+    {
+      "time_s": 49.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.598
+    },
+    {
+      "time_s": 49.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.543
+    },
+    {
+      "time_s": 49.5,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.487
+    },
+    {
+      "time_s": 49.667,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.432
+    },
+    {
+      "time_s": 49.833,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.376
+    },
+    {
+      "time_s": 50.0,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.32
+    },
+    {
+      "time_s": 50.167,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.265
+    },
+    {
+      "time_s": 50.333,
+      "phase": "transport",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.992,
+      "slip_observer_error_mm": 7.209
+    },
+    {
+      "time_s": 50.5,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.98
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9918,
+      "slip_observer_error_mm": 7.154
+    },
+    {
+      "time_s": 50.667,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.978
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9912,
+      "slip_observer_error_mm": 7.098
+    },
+    {
+      "time_s": 50.833,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.975
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9901,
+      "slip_observer_error_mm": 7.042
+    },
+    {
+      "time_s": 51.0,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.972
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9886,
+      "slip_observer_error_mm": 6.987
+    },
+    {
+      "time_s": 51.167,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.967
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9867,
+      "slip_observer_error_mm": 6.931
+    },
+    {
+      "time_s": 51.333,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.961
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9844,
+      "slip_observer_error_mm": 6.876
+    },
+    {
+      "time_s": 51.5,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.954
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9817,
+      "slip_observer_error_mm": 6.82
+    },
+    {
+      "time_s": 51.667,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.947
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9787,
+      "slip_observer_error_mm": 6.764
+    },
+    {
+      "time_s": 51.833,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 1.0,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.938
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9753,
+      "slip_observer_error_mm": 6.709
+    },
+    {
+      "time_s": 52.0,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.995,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.929
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.972,
+      "slip_observer_error_mm": 6.653
+    },
+    {
+      "time_s": 52.167,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.985,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.919
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9686,
+      "slip_observer_error_mm": 6.598
+    },
+    {
+      "time_s": 52.333,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.973,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 1.0,
+        "little": 0.908
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9645,
+      "slip_observer_error_mm": 6.542
+    },
+    {
+      "time_s": 52.5,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.961,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 0.989,
+        "little": 0.897
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9612,
+      "slip_observer_error_mm": 6.486
+    },
+    {
+      "time_s": 52.667,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.948,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 0.976,
+        "little": 0.885
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9572,
+      "slip_observer_error_mm": 6.431
+    },
+    {
+      "time_s": 52.833,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.935,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 0.962,
+        "little": 0.873
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9525,
+      "slip_observer_error_mm": 6.375
+    },
+    {
+      "time_s": 53.0,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.921,
+        "index": 1.0,
+        "middle": 1.0,
+        "ring": 0.947,
+        "little": 0.86
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9473,
+      "slip_observer_error_mm": 6.32
+    },
+    {
+      "time_s": 53.167,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.907,
+        "index": 0.993,
+        "middle": 1.0,
+        "ring": 0.933,
+        "little": 0.846
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9429,
+      "slip_observer_error_mm": 6.264
+    },
+    {
+      "time_s": 53.333,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.892,
+        "index": 0.977,
+        "middle": 1.0,
+        "ring": 0.917,
+        "little": 0.832
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9399,
+      "slip_observer_error_mm": 6.208
+    },
+    {
+      "time_s": 53.5,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.876,
+        "index": 0.96,
+        "middle": 1.0,
+        "ring": 0.902,
+        "little": 0.818
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9364,
+      "slip_observer_error_mm": 6.153
+    },
+    {
+      "time_s": 53.667,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.861,
+        "index": 0.943,
+        "middle": 0.984,
+        "ring": 0.885,
+        "little": 0.803
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.937,
+      "slip_observer_error_mm": 6.097
+    },
+    {
+      "time_s": 53.833,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.845,
+        "index": 0.925,
+        "middle": 0.966,
+        "ring": 0.869,
+        "little": 0.789
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9382,
+      "slip_observer_error_mm": 6.042
+    },
+    {
+      "time_s": 54.0,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.829,
+        "index": 0.908,
+        "middle": 0.947,
+        "ring": 0.852,
+        "little": 0.773
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9394,
+      "slip_observer_error_mm": 5.986
+    },
+    {
+      "time_s": 54.167,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.812,
+        "index": 0.89,
+        "middle": 0.928,
+        "ring": 0.836,
+        "little": 0.758
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9406,
+      "slip_observer_error_mm": 5.931
+    },
+    {
+      "time_s": 54.333,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.796,
+        "index": 0.872,
+        "middle": 0.909,
+        "ring": 0.818,
+        "little": 0.743
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9418,
+      "slip_observer_error_mm": 5.875
+    },
+    {
+      "time_s": 54.5,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.779,
+        "index": 0.853,
+        "middle": 0.89,
+        "ring": 0.801,
+        "little": 0.727
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.943,
+      "slip_observer_error_mm": 5.819
+    },
+    {
+      "time_s": 54.667,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.762,
+        "index": 0.835,
+        "middle": 0.871,
+        "ring": 0.784,
+        "little": 0.712
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9442,
+      "slip_observer_error_mm": 5.764
+    },
+    {
+      "time_s": 54.833,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.746,
+        "index": 0.817,
+        "middle": 0.852,
+        "ring": 0.767,
+        "little": 0.696
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9455,
+      "slip_observer_error_mm": 5.708
+    },
+    {
+      "time_s": 55.0,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.729,
+        "index": 0.798,
+        "middle": 0.833,
+        "ring": 0.75,
+        "little": 0.68
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9467,
+      "slip_observer_error_mm": 5.653
+    },
+    {
+      "time_s": 55.167,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.712,
+        "index": 0.78,
+        "middle": 0.814,
+        "ring": 0.733,
+        "little": 0.665
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9479,
+      "slip_observer_error_mm": 5.597
+    },
+    {
+      "time_s": 55.333,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.696,
+        "index": 0.762,
+        "middle": 0.795,
+        "ring": 0.716,
+        "little": 0.65
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9491,
+      "slip_observer_error_mm": 5.541
+    },
+    {
+      "time_s": 55.5,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.68,
+        "index": 0.744,
+        "middle": 0.777,
+        "ring": 0.699,
+        "little": 0.634
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9503,
+      "slip_observer_error_mm": 5.486
+    },
+    {
+      "time_s": 55.667,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.664,
+        "index": 0.727,
+        "middle": 0.759,
+        "ring": 0.683,
+        "little": 0.62
+      },
+      "active_fingers": 4,
+      "contact_balance": 0.9515,
+      "slip_observer_error_mm": 5.43
+    },
+    {
+      "time_s": 55.833,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.648,
+        "index": 0.71,
+        "middle": 0.741,
+        "ring": 0.667,
+        "little": 0.605
+      },
+      "active_fingers": 4,
+      "contact_balance": 0.9526,
+      "slip_observer_error_mm": 5.375
+    },
+    {
+      "time_s": 56.0,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.633,
+        "index": 0.693,
+        "middle": 0.723,
+        "ring": 0.651,
+        "little": 0.591
+      },
+      "active_fingers": 4,
+      "contact_balance": 0.9537,
+      "slip_observer_error_mm": 5.319
+    },
+    {
+      "time_s": 56.167,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.618,
+        "index": 0.677,
+        "middle": 0.706,
+        "ring": 0.635,
+        "little": 0.577
+      },
+      "active_fingers": 3,
+      "contact_balance": 0.9548,
+      "slip_observer_error_mm": 5.263
+    },
+    {
+      "time_s": 56.333,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.603,
+        "index": 0.661,
+        "middle": 0.689,
+        "ring": 0.621,
+        "little": 0.563
+      },
+      "active_fingers": 3,
+      "contact_balance": 0.9559,
+      "slip_observer_error_mm": 5.208
+    },
+    {
+      "time_s": 56.5,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.589,
+        "index": 0.645,
+        "middle": 0.673,
+        "ring": 0.606,
+        "little": 0.55
+      },
+      "active_fingers": 2,
+      "contact_balance": 0.9569,
+      "slip_observer_error_mm": 5.152
+    },
+    {
+      "time_s": 56.667,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.576,
+        "index": 0.631,
+        "middle": 0.658,
+        "ring": 0.592,
+        "little": 0.537
+      },
+      "active_fingers": 2,
+      "contact_balance": 0.9579,
+      "slip_observer_error_mm": 5.097
+    },
+    {
+      "time_s": 56.833,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.563,
+        "index": 0.617,
+        "middle": 0.643,
+        "ring": 0.579,
+        "little": 0.525
+      },
+      "active_fingers": 1,
+      "contact_balance": 0.9588,
+      "slip_observer_error_mm": 5.041
+    },
+    {
+      "time_s": 57.0,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.551,
+        "index": 0.603,
+        "middle": 0.629,
+        "ring": 0.566,
+        "little": 0.514
+      },
+      "active_fingers": 1,
+      "contact_balance": 0.9597,
+      "slip_observer_error_mm": 4.985
+    },
+    {
+      "time_s": 57.167,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.539,
+        "index": 0.591,
+        "middle": 0.616,
+        "ring": 0.555,
+        "little": 0.503
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9606,
+      "slip_observer_error_mm": 4.93
+    },
+    {
+      "time_s": 57.333,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.528,
+        "index": 0.579,
+        "middle": 0.604,
+        "ring": 0.544,
+        "little": 0.493
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9614,
+      "slip_observer_error_mm": 4.874
+    },
+    {
+      "time_s": 57.5,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.518,
+        "index": 0.568,
+        "middle": 0.592,
+        "ring": 0.533,
+        "little": 0.484
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9621,
+      "slip_observer_error_mm": 4.819
+    },
+    {
+      "time_s": 57.667,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.509,
+        "index": 0.558,
+        "middle": 0.582,
+        "ring": 0.524,
+        "little": 0.475
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9628,
+      "slip_observer_error_mm": 4.763
+    },
+    {
+      "time_s": 57.833,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.501,
+        "index": 0.549,
+        "middle": 0.573,
+        "ring": 0.515,
+        "little": 0.468
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9634,
+      "slip_observer_error_mm": 4.707
+    },
+    {
+      "time_s": 58.0,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.494,
+        "index": 0.541,
+        "middle": 0.564,
+        "ring": 0.508,
+        "little": 0.461
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9639,
+      "slip_observer_error_mm": 4.652
+    },
+    {
+      "time_s": 58.167,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.487,
+        "index": 0.534,
+        "middle": 0.557,
+        "ring": 0.501,
+        "little": 0.455
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9644,
+      "slip_observer_error_mm": 4.596
+    },
+    {
+      "time_s": 58.333,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.482,
+        "index": 0.528,
+        "middle": 0.551,
+        "ring": 0.496,
+        "little": 0.45
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9647,
+      "slip_observer_error_mm": 4.541
+    },
+    {
+      "time_s": 58.5,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.478,
+        "index": 0.523,
+        "middle": 0.546,
+        "ring": 0.492,
+        "little": 0.446
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.965,
+      "slip_observer_error_mm": 4.485
+    },
+    {
+      "time_s": 58.667,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.475,
+        "index": 0.52,
+        "middle": 0.543,
+        "ring": 0.489,
+        "little": 0.443
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9653,
+      "slip_observer_error_mm": 4.429
+    },
+    {
+      "time_s": 58.833,
+      "phase": "insert",
+      "finger_contacts": {
+        "thumb": 0.473,
+        "index": 0.518,
+        "middle": 0.541,
+        "ring": 0.487,
+        "little": 0.442
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9654,
+      "slip_observer_error_mm": 4.374
+    },
+    {
+      "time_s": 59.0,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 4.318
+    },
+    {
+      "time_s": 59.167,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 4.263
+    },
+    {
+      "time_s": 59.333,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 4.207
+    },
+    {
+      "time_s": 59.5,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 4.151
+    },
+    {
+      "time_s": 59.667,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 4.096
+    },
+    {
+      "time_s": 59.833,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 4.04
+    },
+    {
+      "time_s": 60.0,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.985
+    },
+    {
+      "time_s": 60.167,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.929
+    },
+    {
+      "time_s": 60.333,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.873
+    },
+    {
+      "time_s": 60.5,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.818
+    },
+    {
+      "time_s": 60.667,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.762
+    },
+    {
+      "time_s": 60.833,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.707
+    },
+    {
+      "time_s": 61.0,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.651
+    },
+    {
+      "time_s": 61.167,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.595
+    },
+    {
+      "time_s": 61.333,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.54
+    },
+    {
+      "time_s": 61.5,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.484
+    },
+    {
+      "time_s": 61.667,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.429
+    },
+    {
+      "time_s": 61.833,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.373
+    },
+    {
+      "time_s": 62.0,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.317
+    },
+    {
+      "time_s": 62.167,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.262
+    },
+    {
+      "time_s": 62.333,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.206
+    },
+    {
+      "time_s": 62.5,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.151
+    },
+    {
+      "time_s": 62.667,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.095
+    },
+    {
+      "time_s": 62.833,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 3.039
+    },
+    {
+      "time_s": 63.0,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.984
+    },
+    {
+      "time_s": 63.167,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.928
+    },
+    {
+      "time_s": 63.333,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.873
+    },
+    {
+      "time_s": 63.5,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.817
+    },
+    {
+      "time_s": 63.667,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.761
+    },
+    {
+      "time_s": 63.833,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.706
+    },
+    {
+      "time_s": 64.0,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.65
+    },
+    {
+      "time_s": 64.167,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.595
+    },
+    {
+      "time_s": 64.333,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.539
+    },
+    {
+      "time_s": 64.5,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.483
+    },
+    {
+      "time_s": 64.667,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.428
+    },
+    {
+      "time_s": 64.833,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.372
+    },
+    {
+      "time_s": 65.0,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.317
+    },
+    {
+      "time_s": 65.167,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.261
+    },
+    {
+      "time_s": 65.333,
+      "phase": "audit_press",
+      "finger_contacts": {
+        "thumb": 0.231,
+        "index": 0.253,
+        "middle": 0.264,
+        "ring": 0.238,
+        "little": 0.216
+      },
+      "active_fingers": 0,
+      "contact_balance": 0.9831,
+      "slip_observer_error_mm": 2.205
+    },
+    {
+      "time_s": 65.5,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 23.33
+    },
+    {
+      "time_s": 65.667,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 19.991
+    },
+    {
+      "time_s": 65.833,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 17.13
+    },
+    {
+      "time_s": 66.0,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 14.679
+    },
+    {
+      "time_s": 66.167,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 12.578
+    },
+    {
+      "time_s": 66.333,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 10.778
+    },
+    {
+      "time_s": 66.5,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 9.236
+    },
+    {
+      "time_s": 66.667,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 7.914
+    },
+    {
+      "time_s": 66.833,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 6.782
+    },
+    {
+      "time_s": 67.0,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 5.811
+    },
+    {
+      "time_s": 67.167,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 4.98
+    },
+    {
+      "time_s": 67.333,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 4.267
+    },
+    {
+      "time_s": 67.5,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 3.656
+    },
+    {
+      "time_s": 67.667,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 3.133
+    },
+    {
+      "time_s": 67.833,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 2.685
+    },
+    {
+      "time_s": 68.0,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 2.301
+    },
+    {
+      "time_s": 68.167,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 1.971
+    },
+    {
+      "time_s": 68.333,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 1.689
+    },
+    {
+      "time_s": 68.5,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 1.447
+    },
+    {
+      "time_s": 68.667,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 1.24
+    },
+    {
+      "time_s": 68.833,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 1.063
+    },
+    {
+      "time_s": 69.0,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.911
+    },
+    {
+      "time_s": 69.167,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.78
+    },
+    {
+      "time_s": 69.333,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.669
+    },
+    {
+      "time_s": 69.5,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.573
+    },
+    {
+      "time_s": 69.667,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.491
+    },
+    {
+      "time_s": 69.833,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.421
+    },
+    {
+      "time_s": 70.0,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.361
+    },
+    {
+      "time_s": 70.167,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.309
+    },
+    {
+      "time_s": 70.333,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.265
+    },
+    {
+      "time_s": 70.5,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.227
+    },
+    {
+      "time_s": 70.667,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.194
+    },
+    {
+      "time_s": 70.833,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.167
+    },
+    {
+      "time_s": 71.0,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.143
+    },
+    {
+      "time_s": 71.167,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.122
+    },
+    {
+      "time_s": 71.333,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.105
+    },
+    {
+      "time_s": 71.5,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.09
+    },
+    {
+      "time_s": 71.667,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.077
+    },
+    {
+      "time_s": 71.833,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.066
+    },
+    {
+      "time_s": 71.944,
+      "phase": "slip_recovery",
+      "finger_contacts": {
+        "thumb": 0.788,
+        "index": 0.862,
+        "middle": 0.9,
+        "ring": 0.81,
+        "little": 0.735
+      },
+      "active_fingers": 5,
+      "contact_balance": 0.9424,
+      "slip_observer_error_mm": 0.059
+    }
+  ]
+}

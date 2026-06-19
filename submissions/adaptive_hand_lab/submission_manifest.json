@@ -1,0 +1,42 @@
+{
+  "project_name": "Adaptive Hand Lab",
+  "registration_uuid": "f5b9c1c8-8f90-4fb9-9c7a-5e5f8a6b6c21",
+  "primary_files": {
+    "scene": "adaptive_hand_lab_scene.xml",
+    "runner": "run_adaptive_hand_lab.py",
+    "demo": "artifacts/adaptive_hand_lab_demo.mp4",
+    "trajectory": "artifacts/adaptive_hand_lab_trajectory.json",
+    "report": "artifacts/adaptive_hand_lab_report.json",
+    "evaluation": "artifacts/adaptive_hand_lab_eval.json",
+    "contact_timeline": "artifacts/adaptive_hand_lab_contact_timeline.json"
+  },
+  "headline_metrics": {
+    "controller": "minimum-jerk stage planner plus visual-servo/contact/slip residual policy",
+    "raw_median_visual_servo_error_m": 0.01908,
+    "median_visual_servo_error_m": 0.00577,
+    "servo_error_reduction_pct": 69.76,
+    "final_slip_observer_error_mm": 0.059,
+    "max_slip_observer_error_mm": 24.0,
+    "mean_policy_confidence": 0.7894,
+    "residual_corrections_applied": 430,
+    "stable_five_finger_samples": 227
+  },
+  "stress_summary": {
+    "baseline_success_rate": 0.3,
+    "residual_success_rate": 1.0,
+    "baseline_median_error_mm": 65.056,
+    "residual_median_error_mm": 9.177,
+    "median_improvement_mm": 55.951,
+    "demo_closed_loop_metrics": {
+      "controller": "minimum-jerk stage planner plus visual-servo/contact/slip residual policy",
+      "raw_median_visual_servo_error_m": 0.01908,
+      "median_visual_servo_error_m": 0.00577,
+      "servo_error_reduction_pct": 69.76,
+      "final_slip_observer_error_mm": 0.059,
+      "max_slip_observer_error_mm": 24.0,
+      "mean_policy_confidence": 0.7894,
+      "residual_corrections_applied": 430,
+      "stable_five_finger_samples": 227
+    }
+  }
+}

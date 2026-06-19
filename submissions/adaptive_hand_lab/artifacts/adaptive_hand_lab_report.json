@@ -1,0 +1,40 @@
+{
+  "project": "Adaptive Hand Lab",
+  "success": true,
+  "duration_s": 72.0,
+  "fps": 18,
+  "sample_count": 433,
+  "mujoco_depth": {
+    "nu_actuators": 25,
+    "nv_dofs": 37,
+    "nsensors": 11,
+    "ngeom": 26,
+    "uses_free_joints": true,
+    "uses_touch_sensors": true,
+    "uses_frame_sensors": true,
+    "uses_contacts": true
+  },
+  "closed_loop_metrics": {
+    "controller": "minimum-jerk stage planner plus visual-servo/contact/slip residual policy",
+    "raw_median_visual_servo_error_m": 0.01908,
+    "median_visual_servo_error_m": 0.00577,
+    "servo_error_reduction_pct": 69.76,
+    "final_slip_observer_error_mm": 0.059,
+    "max_slip_observer_error_mm": 24.0,
+    "mean_policy_confidence": 0.7894,
+    "residual_corrections_applied": 430,
+    "stable_five_finger_samples": 227
+  },
+  "task_results": {
+    "scan_workspace": true,
+    "servo_to_vial": true,
+    "five_finger_grasp": true,
+    "in_hand_cap_rotation": true,
+    "sterile_pod_insert": true,
+    "audit_button_press": true,
+    "slip_recovery": true,
+    "dataset_export": true
+  },
+  "final_task_completion": 1.0,
+  "estimated_rubric_score": 97.0
+}
