@@ -10,7 +10,8 @@ from .video import VideoRecorder
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-MENAGERIE_G1 = PROJECT_ROOT / "vendor" / "mujoco_menagerie" / "unitree_g1" / "g1_with_hands.xml"
+REPO_ROOT = Path(__file__).resolve().parents[4]
+FF_MASTER_XML = REPO_ROOT / "assets" / "Master" / "ff_master_ultra.xml"
 DEFAULT_DESCENT_STEPS = 1
 TOWER_X = 0.95
 VEHICLE_X = 0.35
@@ -42,10 +43,10 @@ def run_descent_demo(
             "MuJoCo is not installed. Install it with: pip install -e '.[sim]'"
         ) from exc
 
-    if not MENAGERIE_G1.exists():
+    if not FF_MASTER_XML.exists():
         raise RuntimeError(
-            "Unitree G1 Menagerie model was not found. Expected it at "
-            f"{MENAGERIE_G1}. Clone or vendor google-deepmind/mujoco_menagerie first."
+            "FF Master MuJoCo model was not found. Expected it at "
+            f"{FF_MASTER_XML}. This repository should include assets/Master."
         )
     if trip_count < 1:
         raise ValueError("trip_count must be at least 1")
@@ -53,7 +54,7 @@ def run_descent_demo(
     scene_file = tempfile.NamedTemporaryFile(
         "w",
         encoding="utf-8",
-        dir=MENAGERIE_G1.parent,
+        dir=FF_MASTER_XML.parent,
         prefix="tower_descent_",
         suffix=".xml",
         delete=False,
@@ -116,8 +117,8 @@ def _scene_xml() -> str:
     )
     return textwrap.dedent(
         f"""
-        <mujoco model="unitree_g1_tower_descent">
-          <include file="g1_with_hands.xml"/>
+        <mujoco model="ff_master_tower_descent">
+          <include file="ff_master_ultra.xml"/>
           <compiler angle="radian"/>
           <option timestep="0.004" solver="CG" iterations="80" integrator="Euler"/>
           <statistic center="0.48 0 1.75" extent="4.0"/>
@@ -236,13 +237,6 @@ def _set_standing_pose(model: object, data: object) -> None:
         "right_wrist_roll_joint": 0.08,
         "right_wrist_pitch_joint": -0.08,
         "right_wrist_yaw_joint": 0.08,
-        "right_hand_thumb_0_joint": -0.72,
-        "right_hand_thumb_1_joint": -0.34,
-        "right_hand_thumb_2_joint": -0.46,
-        "right_hand_index_0_joint": 0.34,
-        "right_hand_index_1_joint": 0.46,
-        "right_hand_middle_0_joint": 0.32,
-        "right_hand_middle_1_joint": 0.42,
     }
     for joint_name, value in standing_pose.items():
         _set_joint_qpos(model, data, joint_name, value)
@@ -260,16 +254,9 @@ def _align_paint_tool_to_hand(model: object, data: object, vehicle_z: float) -> 
 
 
 def _right_hand_grip_position(model: object, data: object) -> tuple[float, float, float]:
-    grip_bodies = (
-        "right_hand_thumb_1_link",
-        "right_hand_index_0_link",
-        "right_hand_middle_0_link",
-    )
-    positions = []
-    for body_name in grip_bodies:
-        body_id = model.body(body_name).id
-        positions.append(tuple(float(value) for value in data.xpos[body_id]))
-    return tuple(sum(position[index] for position in positions) / len(positions) for index in range(3))
+    body_id = model.body("right_wrist_roll_link").id
+    wrist = tuple(float(value) for value in data.xpos[body_id])
+    return (wrist[0] - 0.05, wrist[1], wrist[2] - 0.12)
 
 
 def _hide_paint_swaths(model: object) -> None:

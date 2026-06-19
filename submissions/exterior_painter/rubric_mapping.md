@@ -13,7 +13,7 @@
 
 ## Engineering
 
-- Uses the official Menagerie `g1_with_hands.xml` model.
+- Uses the repository's existing FF Master `assets/Master/ff_master_ultra.xml` model.
 - Generates a task-specific MJCF scene at runtime.
 - Cleans up temporary XML after execution.
 - Supports viewer and video modes.

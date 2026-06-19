@@ -7,11 +7,11 @@ Registration UUID: `c84e57d8-ca0d-4383-8b36-de63393e7c3e`
 ## Project Summary · 项目说明
 
 - **Project name · 项目名称**: Tower painting descent task
-- **Robot platform · 机器人平台**: Unitree G1 humanoid with articulated hands, using MuJoCo Menagerie `g1_with_hands.xml`
-- **Task goal · 任务目标**: Simulate a Unitree G1 robot standing in a moving vehicle that descends a tower while a roller touches and paints the building wall.
-- **Technical approach · 技术方案**: MuJoCo MJCF scene generation, Menagerie `g1_with_hands.xml` include, scripted vehicle descent, standing robot pose, tower/landing/rail geometry, hand-held roller, paint bucket, articulated finger closure, progressive paint swaths, and optional video export.
-- **Core features · 核心功能**: Top-to-bottom vehicle travel, standing robot worker, articulated right-hand grasp on the wall-contact roller, visible paint coverage, viewer mode, headless MP4 export, configurable trip count, and simple deterministic motion.
-- **Highlights · 亮点**: Very legible task, visible painting action, stable automated evaluation, plain G1 model, obvious start/end state, included `demo.mp4`, and explicit `rubric_mapping.md`, `judge_brief.md`, `self_assessment.md`, and `scorecard.json`.
+- **Robot platform · 机器人平台**: FF Master humanoid from the repository `assets/Master/ff_master_ultra.xml`.
+- **Task goal · 任务目标**: Simulate the FF Master robot standing in a moving exterior painting vehicle that descends a tower while a roller touches and paints the building wall.
+- **Technical approach · 技术方案**: MuJoCo MJCF scene generation, local FF Master include, scripted vehicle descent, standing robot pose, tower/landing/rail geometry, hand-held roller, paint bucket, right wrist/tool alignment, progressive paint swaths, and optional video export.
+- **Core features · 核心功能**: Top-to-bottom vehicle travel, standing robot worker, wall-contact roller, visible paint coverage, viewer mode, headless MP4 export, configurable trip count, and simple deterministic motion.
+- **Highlights · 亮点**: Very legible task, visible painting action, stable automated evaluation, local repository robot model, obvious start/end state, included `demo.mp4`, and explicit `rubric_mapping.md`, `judge_brief.md`, `self_assessment.md`, and `scorecard.json`.
 - **Current limitations · 当前局限**: Vehicle descent and roller contact are scripted for deterministic evaluation rather than fully contact-rich whole-body control; balance and wall-force feedback are simplified.
 - **Future improvements · 未来改进**: Add contact-aware roller force control, perception-based wall coverage tracking, learned balance and manipulation policies, richer paint material simulation, and longer multi-pass facade tasks.
 

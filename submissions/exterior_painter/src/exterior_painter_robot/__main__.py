@@ -19,7 +19,7 @@ def main() -> None:
     parser.add_argument(
         "--descent",
         action="store_true",
-        help="Run the Unitree G1 tower painting descent demo",
+        help="Run the FF Master tower painting descent demo",
     )
     parser.add_argument(
         "--trips",

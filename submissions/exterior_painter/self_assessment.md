@@ -2,7 +2,7 @@
 
 Recommended score: **90/100**
 
-The task is intentionally simple and easy to judge: a G1 robot stands in a moving exterior vehicle that travels from the top of a tower to the bottom while a roller touches and paints the wall. It is stable, runnable, and visually clear. The main limitation is that the vehicle and roller motion are scripted rather than controlled through a physical drive mechanism.
+The task is intentionally simple and easy to judge: the FF Master robot stands in a moving exterior vehicle that travels from the top of a tower to the bottom while a roller touches and paints the wall. It is stable, runnable, visually clear, and uses robot assets already present in the base repository. The main limitation is that the vehicle and roller motion are scripted rather than controlled through a physical drive mechanism.
 
 Key files:
 

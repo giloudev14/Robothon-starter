@@ -1,7 +1,7 @@
 {
   "score": 90,
   "project": "Tower painting descent task",
-  "recommendation": "Simple, stable MuJoCo demo: a standing G1 rides a moving vehicle down a tower while a roller paints the wall.",
+  "recommendation": "Simple, stable MuJoCo demo: the FF Master rides a moving vehicle down a tower while a roller paints the wall.",
   "categories": {
     "01_runnability": {
       "score": 96,
@@ -17,7 +17,7 @@
     },
     "04_presentation": {
       "score": 92,
-      "reason": "Tower, rails, vehicle, paint bucket, hand-held roller with articulated finger grasp, visible paint swaths, and G1 worker make the task easy to understand."
+      "reason": "Tower, rails, vehicle, paint bucket, hand-held roller, visible paint swaths, and FF Master worker make the task easy to understand."
     }
   }
 }
