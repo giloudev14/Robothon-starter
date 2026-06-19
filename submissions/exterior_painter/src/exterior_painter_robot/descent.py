@@ -4,6 +4,7 @@ import math
 import tempfile
 import textwrap
 import time
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from .video import VideoRecorder
@@ -23,9 +24,20 @@ PAINT_SWATH_TOP_LOCAL_Z = 1.12
 PAINT_SWATH_SPACING = 0.18
 WALL_FACE_X = TOWER_X - 0.172
 ROLLER_RELATIVE_X = WALL_FACE_X - VEHICLE_X - 0.012
-ROLLER_RELATIVE_Z = 0.78
+ROLLER_RELATIVE_Z = -0.20
 ROLLER_WORLD_X = WALL_FACE_X - 0.012
+ROLLER_TARGET_FORCE_N = 8.0
+ROLLER_MIN_PAINT_FORCE_N = 2.0
 _ACTIVE_RECORDER: VideoRecorder | None = None
+
+
+@dataclass
+class PaintingState:
+    swath_alpha: list[float] = field(default_factory=lambda: [0.0] * PAINT_SWATH_COUNT)
+    painted_steps: int = 0
+    contact_steps: int = 0
+    force_samples: list[float] = field(default_factory=list)
+    last_contact_z: float | None = None
 
 
 def run_descent_demo(
@@ -69,6 +81,7 @@ def run_descent_demo(
         _hide_paint_swaths(model)
         _set_standing_pose(model, data)
         _set_descent_height(model, data, TOP_Z)
+        painting = PaintingState()
 
         viewer = None
         if render:
@@ -82,10 +95,22 @@ def run_descent_demo(
         try:
             _sync(model, data, viewer)
             for trip in range(1, trip_count + 1):
-                _descend_vehicle(model, data, speed=speed, viewer=viewer)
+                _descend_vehicle(model, data, speed=speed, viewer=viewer, painting=painting)
                 print(f"painting descent complete {trip}/{trip_count}: vehicle reached the bottom landing")
                 if trip < trip_count:
-                    _return_to_top(model, data, speed=speed, viewer=viewer)
+                    _return_to_top(model, data, speed=speed, viewer=viewer, painting=painting)
+            coverage = sum(1 for alpha in painting.swath_alpha if alpha >= 0.95)
+            average_force = (
+                sum(painting.force_samples) / len(painting.force_samples)
+                if painting.force_samples
+                else 0.0
+            )
+            print(
+                "contact-aware paint report: "
+                f"{coverage}/{PAINT_SWATH_COUNT} swaths covered, "
+                f"{painting.contact_steps} contact steps, "
+                f"{average_force:.1f} N average roller normal force"
+            )
             print("tower painting vehicle demo complete; close the MuJoCo viewer window after your screenshot")
             if recorder is not None:
                 print(f"video saved: {recorder.path} ({recorder.frame_count} frames)")
@@ -137,6 +162,9 @@ def _scene_xml() -> str:
             <material name="roller_mat" rgba="0.08 0.18 0.22 1"/>
             <material name="nap_mat" rgba="0.92 0.94 0.78 1"/>
           </asset>
+          <contact>
+            <pair geom1="paint_roller" geom2="tower_core" condim="3" friction="0.8 0.1 0.1" solref="0.01 1"/>
+          </contact>
           <worldbody>
             <light name="sun" pos="-1.5 -2.0 5.0" dir="0.5 0.5 -1.0" directional="true" diffuse="0.9 0.9 0.85"/>
             <camera name="descent_overview" pos="-2.7 -4.4 2.65" xyaxes="0.86 -0.51 0 0.24 0.41 0.88" fovy="68"/>
@@ -153,12 +181,12 @@ def _scene_xml() -> str:
               {paint_swaths}
             </body>
 
-            <geom name="left_guide_rail" type="capsule" fromto="{VEHICLE_X} -0.36 {BOTTOM_Z} {VEHICLE_X} -0.36 {TOP_Z}" size="0.018" material="rail_mat"/>
-            <geom name="right_guide_rail" type="capsule" fromto="{VEHICLE_X} 0.36 {BOTTOM_Z} {VEHICLE_X} 0.36 {TOP_Z}" size="0.018" material="rail_mat"/>
-            <geom name="left_top_rail_curve" type="capsule" fromto="{VEHICLE_X:.3f} -0.36 {TOP_Z:.3f} {VEHICLE_X + 0.08:.3f} -0.36 {TOWER_TOP_Z:.3f}" size="0.018" material="rail_mat"/>
-            <geom name="right_top_rail_curve" type="capsule" fromto="{VEHICLE_X:.3f} 0.36 {TOP_Z:.3f} {VEHICLE_X + 0.08:.3f} 0.36 {TOWER_TOP_Z:.3f}" size="0.018" material="rail_mat"/>
-            <geom name="left_top_roof_anchor" type="capsule" fromto="{VEHICLE_X + 0.08:.3f} -0.36 {TOWER_TOP_Z:.3f} {TOWER_X:.3f} -0.31 {TOWER_TOP_Z:.3f}" size="0.018" material="rail_mat"/>
-            <geom name="right_top_roof_anchor" type="capsule" fromto="{VEHICLE_X + 0.08:.3f} 0.36 {TOWER_TOP_Z:.3f} {TOWER_X:.3f} 0.31 {TOWER_TOP_Z:.3f}" size="0.018" material="rail_mat"/>
+            <geom name="left_guide_rail" type="capsule" fromto="{VEHICLE_X} -0.36 {BOTTOM_Z} {VEHICLE_X} -0.36 {TOP_Z}" size="0.018" material="rail_mat" contype="0" conaffinity="0"/>
+            <geom name="right_guide_rail" type="capsule" fromto="{VEHICLE_X} 0.36 {BOTTOM_Z} {VEHICLE_X} 0.36 {TOP_Z}" size="0.018" material="rail_mat" contype="0" conaffinity="0"/>
+            <geom name="left_top_rail_curve" type="capsule" fromto="{VEHICLE_X:.3f} -0.36 {TOP_Z:.3f} {VEHICLE_X + 0.08:.3f} -0.36 {TOWER_TOP_Z:.3f}" size="0.018" material="rail_mat" contype="0" conaffinity="0"/>
+            <geom name="right_top_rail_curve" type="capsule" fromto="{VEHICLE_X:.3f} 0.36 {TOP_Z:.3f} {VEHICLE_X + 0.08:.3f} 0.36 {TOWER_TOP_Z:.3f}" size="0.018" material="rail_mat" contype="0" conaffinity="0"/>
+            <geom name="left_top_roof_anchor" type="capsule" fromto="{VEHICLE_X + 0.08:.3f} -0.36 {TOWER_TOP_Z:.3f} {TOWER_X:.3f} -0.31 {TOWER_TOP_Z:.3f}" size="0.018" material="rail_mat" contype="0" conaffinity="0"/>
+            <geom name="right_top_roof_anchor" type="capsule" fromto="{VEHICLE_X + 0.08:.3f} 0.36 {TOWER_TOP_Z:.3f} {TOWER_X:.3f} 0.31 {TOWER_TOP_Z:.3f}" size="0.018" material="rail_mat" contype="0" conaffinity="0"/>
 
             <body name="descent_vehicle" pos="{VEHICLE_X} 0 {TOP_Z}">
               <freejoint name="descent_vehicle_free"/>
@@ -177,7 +205,7 @@ def _scene_xml() -> str:
 
             <body name="roller_handle_body" pos="0 0 1">
               <freejoint name="roller_handle_free"/>
-              <geom name="roller_handle" type="capsule" size="0.014 0.5" material="roller_mat" mass="0.2"/>
+              <geom name="roller_handle" type="capsule" size="0.014 0.5" material="roller_mat" mass="0.2" contype="0" conaffinity="0"/>
             </body>
 
           </worldbody>
@@ -186,12 +214,24 @@ def _scene_xml() -> str:
     )
 
 
-def _descend_vehicle(model: object, data: object, speed: float, viewer: object | None) -> None:
-    _move_vehicle(model, data, TOP_Z, BOTTOM_Z, frames=_frames(520, speed), viewer=viewer)
+def _descend_vehicle(
+    model: object,
+    data: object,
+    speed: float,
+    viewer: object | None,
+    painting: PaintingState,
+) -> None:
+    _move_vehicle(model, data, TOP_Z, BOTTOM_Z, frames=_frames(520, speed), viewer=viewer, painting=painting)
 
 
-def _return_to_top(model: object, data: object, speed: float, viewer: object | None) -> None:
-    _move_vehicle(model, data, BOTTOM_Z, TOP_Z, frames=_frames(160, speed), viewer=viewer)
+def _return_to_top(
+    model: object,
+    data: object,
+    speed: float,
+    viewer: object | None,
+    painting: PaintingState,
+) -> None:
+    _move_vehicle(model, data, BOTTOM_Z, TOP_Z, frames=_frames(160, speed), viewer=viewer, painting=painting)
 
 
 def _move_vehicle(
@@ -201,13 +241,68 @@ def _move_vehicle(
     end_z: float,
     frames: int,
     viewer: object | None,
+    painting: PaintingState,
 ) -> None:
     for frame in range(max(1, frames)):
         alpha = (frame + 1) / max(1, frames)
         eased = 0.5 - 0.5 * math.cos(alpha * math.pi)
-        z = start_z + (end_z - start_z) * eased
-        _set_descent_height(model, data, z)
+        target_z = start_z + (end_z - start_z) * eased
+        _apply_descent_controllers(model, data, target_z, end_z < start_z, painting)
         _sync(model, data, viewer)
+
+
+def _apply_descent_controllers(
+    model: object,
+    data: object,
+    vehicle_z: float,
+    painting_enabled: bool,
+    painting: PaintingState,
+) -> None:
+    data.qfrc_applied[:] = 0.0
+    vehicle_pos = _freejoint_position(model, data, "descent_vehicle_free")
+    _apply_freejoint_position_control(
+        model,
+        data,
+        "descent_vehicle_free",
+        (VEHICLE_X, 0.0, vehicle_z),
+        kp=2200.0,
+        kd=260.0,
+        max_force=5200.0,
+        gravity_body="descent_vehicle",
+    )
+    _apply_freejoint_position_control(
+        model,
+        data,
+        "floating_base_joint",
+        (VEHICLE_X - 0.10, 0.0, vehicle_pos[2] + 0.84),
+        kp=900.0,
+        kd=110.0,
+        max_force=1200.0,
+        gravity_body="pelvis",
+    )
+    _apply_standing_posture_control(model, data)
+
+    normal_force = _roller_wall_force(model, data)
+    roller_x = WALL_FACE_X - 0.018 + 0.0004 * (ROLLER_TARGET_FORCE_N - normal_force)
+    roller_x = max(WALL_FACE_X - 0.035, min(WALL_FACE_X - 0.004, roller_x))
+    _apply_freejoint_position_control(
+        model,
+        data,
+        "paint_roller_head_free",
+        (roller_x, 0.0, vehicle_pos[2] + ROLLER_RELATIVE_Z),
+        kp=420.0,
+        kd=72.0,
+        max_force=320.0,
+        gravity_body="paint_roller_head",
+    )
+
+    if normal_force > 0.05:
+        painting.contact_steps += 1
+        painting.force_samples.append(normal_force)
+    if painting_enabled:
+        _update_paint_swaths(model, data, painting, normal_force)
+
+    _align_paint_tool_to_hand(model, data, vehicle_pos[2])
 
 
 def _set_descent_height(model: object, data: object, vehicle_z: float) -> None:
@@ -215,11 +310,15 @@ def _set_descent_height(model: object, data: object, vehicle_z: float) -> None:
     _set_freejoint_pose(model, data, "floating_base_joint", (VEHICLE_X - 0.10, 0.0, vehicle_z + 0.84), yaw=0.0)
     _set_standing_pose(model, data)
     _align_paint_tool_to_hand(model, data, vehicle_z)
-    _update_paint_swaths(model, vehicle_z)
 
 
 def _set_standing_pose(model: object, data: object) -> None:
-    standing_pose = {
+    for joint_name, value in _standing_pose_targets().items():
+        _set_joint_qpos(model, data, joint_name, value)
+
+
+def _standing_pose_targets() -> dict[str, float]:
+    return {
         "left_hip_pitch_joint": -0.08,
         "right_hip_pitch_joint": -0.08,
         "left_knee_joint": 0.18,
@@ -238,15 +337,22 @@ def _set_standing_pose(model: object, data: object) -> None:
         "right_wrist_pitch_joint": -0.08,
         "right_wrist_yaw_joint": 0.08,
     }
-    for joint_name, value in standing_pose.items():
-        _set_joint_qpos(model, data, joint_name, value)
+
+
+def _apply_standing_posture_control(model: object, data: object) -> None:
+    for joint_name, target in _standing_pose_targets().items():
+        joint_id = model.joint(joint_name).id
+        qpos_address = model.jnt_qposadr[joint_id]
+        dof_address = model.jnt_dofadr[joint_id]
+        error = target - float(data.qpos[qpos_address])
+        velocity = float(data.qvel[dof_address])
+        data.qfrc_applied[dof_address] += max(-35.0, min(35.0, 95.0 * error - 8.0 * velocity))
 
 
 def _align_paint_tool_to_hand(model: object, data: object, vehicle_z: float) -> None:
     import mujoco
 
-    roller_center = (ROLLER_WORLD_X, 0.0, vehicle_z + ROLLER_RELATIVE_Z)
-    _set_freejoint_pose(model, data, "paint_roller_head_free", roller_center, yaw=0.0)
+    roller_center = _freejoint_position(model, data, "paint_roller_head_free")
     mujoco.mj_forward(model, data)
 
     hand_grip = _right_hand_grip_position(model, data)
@@ -265,13 +371,92 @@ def _hide_paint_swaths(model: object) -> None:
         model.geom_rgba[geom_id, 3] = 0.0
 
 
-def _update_paint_swaths(model: object, vehicle_z: float) -> None:
-    roller_world_z = vehicle_z + ROLLER_RELATIVE_Z
+def _update_paint_swaths(
+    model: object,
+    data: object,
+    painting: PaintingState,
+    normal_force: float,
+) -> None:
+    roller_world_z = _freejoint_position(model, data, "paint_roller_head_free")[2]
+    force_quality = max(0.0, min(1.0, normal_force / ROLLER_TARGET_FORCE_N))
+    if normal_force >= ROLLER_MIN_PAINT_FORCE_N and painting.last_contact_z is not None:
+        swept_min = min(roller_world_z, painting.last_contact_z) - 0.11
+        swept_max = max(roller_world_z, painting.last_contact_z) + 0.11
+    else:
+        swept_min = roller_world_z - 0.11
+        swept_max = roller_world_z + 0.11
     for index in range(PAINT_SWATH_COUNT):
         geom_id = model.geom(f"paint_swath_{index:02d}").id
         swath_world_z = 1.7 + PAINT_SWATH_TOP_LOCAL_Z - index * PAINT_SWATH_SPACING
-        already_passed = roller_world_z < swath_world_z - 0.035
-        model.geom_rgba[geom_id, 3] = 1.0 if already_passed else 0.0
+        overlap = swept_min <= swath_world_z <= swept_max
+        if overlap and normal_force >= ROLLER_MIN_PAINT_FORCE_N:
+            painting.swath_alpha[index] = min(1.0, painting.swath_alpha[index] + force_quality)
+            painting.painted_steps += 1
+        model.geom_rgba[geom_id, 3] = painting.swath_alpha[index]
+    if normal_force >= ROLLER_MIN_PAINT_FORCE_N:
+        painting.last_contact_z = roller_world_z
+
+
+def _roller_wall_force(model: object, data: object) -> float:
+    import mujoco
+    import numpy as np
+
+    roller_id = model.geom("paint_roller").id
+    wall_ids = {model.geom("tower_core").id}
+    force = np.zeros(6)
+    total = 0.0
+    for index in range(data.ncon):
+        contact = data.contact[index]
+        if {contact.geom1, contact.geom2} == {roller_id, *wall_ids}:
+            mujoco.mj_contactForce(model, data, index, force)
+            total += abs(float(force[0]))
+    return total
+
+
+def _apply_freejoint_position_control(
+    model: object,
+    data: object,
+    joint_name: str,
+    target: tuple[float, float, float],
+    kp: float,
+    kd: float,
+    max_force: float,
+    gravity_body: str | None = None,
+) -> None:
+    qpos_address = _freejoint_qpos_address(model, joint_name)
+    dof_address = _freejoint_dof_address(model, joint_name)
+    for axis in range(3):
+        error = target[axis] - float(data.qpos[qpos_address + axis])
+        velocity = float(data.qvel[dof_address + axis])
+        force = kp * error - kd * velocity
+        data.qfrc_applied[dof_address + axis] += max(-max_force, min(max_force, force))
+    if gravity_body is not None:
+        body_id = model.body(gravity_body).id
+        data.qfrc_applied[dof_address + 2] += float(model.body_subtreemass[body_id]) * abs(float(model.opt.gravity[2]))
+    yaw = _freejoint_yaw(model, data, joint_name)
+    yaw_rate = float(data.qvel[dof_address + 5])
+    data.qfrc_applied[dof_address + 5] += max(-80.0, min(80.0, -120.0 * yaw - 12.0 * yaw_rate))
+
+
+def _freejoint_position(model: object, data: object, joint_name: str) -> tuple[float, float, float]:
+    qpos_address = _freejoint_qpos_address(model, joint_name)
+    return tuple(float(value) for value in data.qpos[qpos_address : qpos_address + 3])
+
+
+def _freejoint_yaw(model: object, data: object, joint_name: str) -> float:
+    qpos_address = _freejoint_qpos_address(model, joint_name)
+    w, x, y, z = (float(value) for value in data.qpos[qpos_address + 3 : qpos_address + 7])
+    return math.atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z))
+
+
+def _freejoint_qpos_address(model: object, joint_name: str) -> int:
+    joint_id = model.joint(joint_name).id
+    return int(model.jnt_qposadr[joint_id])
+
+
+def _freejoint_dof_address(model: object, joint_name: str) -> int:
+    joint_id = model.joint(joint_name).id
+    return int(model.jnt_dofadr[joint_id])
 
 
 def _set_freejoint_pose(
@@ -317,16 +502,16 @@ def _set_joint_qpos(model: object, data: object, joint_name: str, value: float) 
 def _sync(model: object, data: object, viewer: object | None) -> None:
     import mujoco
 
-    mujoco.mj_forward(model, data)
+    mujoco.mj_step(model, data)
     if viewer is not None:
         viewer.sync()
+        time.sleep(model.opt.timestep)
     if _ACTIVE_RECORDER is not None:
         _ACTIVE_RECORDER.record(data)
-    time.sleep(model.opt.timestep)
 
 
 def _frames(base_frames: int, speed: float) -> int:
-    return max(1, int(base_frames / max(speed, 0.05)))
+    return max(520, int(base_frames / max(speed, 0.05)))
 
 
 def _yaw_quat(yaw: float) -> tuple[float, float, float, float]:
