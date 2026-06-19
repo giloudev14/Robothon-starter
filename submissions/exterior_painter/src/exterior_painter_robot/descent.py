@@ -27,8 +27,75 @@ ROLLER_RELATIVE_X = WALL_FACE_X - VEHICLE_X - 0.012
 ROLLER_RELATIVE_Z = -0.20
 ROLLER_WORLD_X = WALL_FACE_X - 0.012
 ROLLER_TARGET_FORCE_N = 8.0
-ROLLER_MIN_PAINT_FORCE_N = 2.0
+ROLLER_MIN_PAINT_FORCE_N = 0.5
+PAINT_COVERED_ALPHA = 0.80
+DESCENT_RATE_M_PER_STEP = 0.0022
+RECOAT_RATE_M_PER_STEP = 0.0024
+PAINT_PARTICLE_COUNT = 56
 _ACTIVE_RECORDER: VideoRecorder | None = None
+
+
+@dataclass(frozen=True)
+class DescentCommand:
+    mode: str
+    target_z: float
+    reason: str
+
+
+@dataclass(frozen=True)
+class DescentSensors:
+    vehicle_z: float
+    roller_z: float
+    normal_force: float
+    coverage_ratio: float
+    weak_swaths: tuple[int, ...]
+
+
+@dataclass
+class AutonomousPaintPlanner:
+    direction: int = -1
+    hold_steps: int = 0
+    recoat_swath: int | None = None
+    decisions: list[str] = field(default_factory=list)
+
+    def command(self, sensors: DescentSensors) -> DescentCommand:
+        if sensors.vehicle_z <= BOTTOM_Z + 0.035 and sensors.coverage_ratio >= 0.98:
+            return DescentCommand("complete", BOTTOM_Z, "bottom reached with target coverage")
+
+        if sensors.normal_force < ROLLER_MIN_PAINT_FORCE_N and sensors.coverage_ratio == 0.0 and self.hold_steps < 18:
+            self.hold_steps += 1
+            return self._remember("hold", sensors.vehicle_z, "waiting for roller contact")
+        self.hold_steps = 0
+
+        if sensors.vehicle_z <= BOTTOM_Z + 0.08 and sensors.weak_swaths:
+            if self.recoat_swath is None:
+                self.recoat_swath = sensors.weak_swaths[0]
+            target_z = _vehicle_z_for_swath(self.recoat_swath)
+            if abs(sensors.vehicle_z - target_z) < 0.06:
+                self.recoat_swath = None
+            step = RECOAT_RATE_M_PER_STEP if target_z > sensors.vehicle_z else -RECOAT_RATE_M_PER_STEP
+            return self._remember(
+                "recoat",
+                _clamp(sensors.vehicle_z + step, BOTTOM_Z, TOP_Z),
+                f"revisiting swath {self.recoat_swath if self.recoat_swath is not None else sensors.weak_swaths[0]:02d}",
+            )
+
+        target_z = _clamp(sensors.vehicle_z - DESCENT_RATE_M_PER_STEP, BOTTOM_Z, TOP_Z)
+        return self._remember("descend", target_z, "coverage and contact acceptable")
+
+    def _remember(self, mode: str, target_z: float, reason: str) -> DescentCommand:
+        message = f"{mode}: {reason}"
+        if not self.decisions or self.decisions[-1] != message:
+            self.decisions.append(message)
+        return DescentCommand(mode, target_z, reason)
+
+
+@dataclass
+class PaintParticle:
+    z: float = 0.0
+    y: float = 0.0
+    alpha: float = 0.0
+    drip_rate: float = 0.0
 
 
 @dataclass
@@ -38,6 +105,9 @@ class PaintingState:
     contact_steps: int = 0
     force_samples: list[float] = field(default_factory=list)
     last_contact_z: float | None = None
+    particles: list[PaintParticle] = field(default_factory=lambda: [PaintParticle() for _ in range(PAINT_PARTICLE_COUNT)])
+    next_particle: int = 0
+    planner_decisions: list[str] = field(default_factory=list)
 
 
 def run_descent_demo(
@@ -99,7 +169,7 @@ def run_descent_demo(
                 print(f"painting descent complete {trip}/{trip_count}: vehicle reached the bottom landing")
                 if trip < trip_count:
                     _return_to_top(model, data, speed=speed, viewer=viewer, painting=painting)
-            coverage = sum(1 for alpha in painting.swath_alpha if alpha >= 0.95)
+            coverage = sum(1 for alpha in painting.swath_alpha if alpha >= PAINT_COVERED_ALPHA)
             average_force = (
                 sum(painting.force_samples) / len(painting.force_samples)
                 if painting.force_samples
@@ -111,6 +181,8 @@ def run_descent_demo(
                 f"{painting.contact_steps} contact steps, "
                 f"{average_force:.1f} N average roller normal force"
             )
+            if painting.planner_decisions:
+                print("autonomy decisions: " + "; ".join(painting.planner_decisions[:6]))
             print("tower painting vehicle demo complete; close the MuJoCo viewer window after your screenshot")
             if recorder is not None:
                 print(f"video saved: {recorder.path} ({recorder.frame_count} frames)")
@@ -139,6 +211,16 @@ def _scene_xml() -> str:
                     contype="0" conaffinity="0"/>
         """
         for index in range(PAINT_SWATH_COUNT)
+    )
+    paint_particles = "\n".join(
+        f"""
+              <geom name="paint_particle_{index:02d}" type="sphere"
+                    pos="-0.185 0 0"
+                    size="0.015"
+                    rgba="0.92 0.94 0.78 0"
+                    contype="0" conaffinity="0"/>
+        """
+        for index in range(PAINT_PARTICLE_COUNT)
     )
     return textwrap.dedent(
         f"""
@@ -179,6 +261,7 @@ def _scene_xml() -> str:
               <geom name="window_05" type="box" pos="-0.165 -0.23 -0.30" size="0.012 0.08 0.16" material="window_mat"/>
               <geom name="window_06" type="box" pos="-0.165 0.23 -0.30" size="0.012 0.08 0.16" material="window_mat"/>
               {paint_swaths}
+              {paint_particles}
             </body>
 
             <geom name="left_guide_rail" type="capsule" fromto="{VEHICLE_X} -0.36 {BOTTOM_Z} {VEHICLE_X} -0.36 {TOP_Z}" size="0.018" material="rail_mat" contype="0" conaffinity="0"/>
@@ -243,11 +326,22 @@ def _move_vehicle(
     viewer: object | None,
     painting: PaintingState,
 ) -> None:
-    for frame in range(max(1, frames)):
-        alpha = (frame + 1) / max(1, frames)
-        eased = 0.5 - 0.5 * math.cos(alpha * math.pi)
-        target_z = start_z + (end_z - start_z) * eased
-        _apply_descent_controllers(model, data, target_z, end_z < start_z, painting)
+    if end_z < start_z:
+        planner = AutonomousPaintPlanner()
+        for _ in range(max(1, frames * 4)):
+            sensors = _sense_descent_state(model, data, painting)
+            command = planner.command(sensors)
+            _apply_descent_controllers(model, data, command.target_z, True, painting)
+            _sync(model, data, viewer)
+            if command.mode == "complete":
+                break
+        painting.planner_decisions = planner.decisions
+        return
+
+    for _ in range(max(1, frames)):
+        current_z = _freejoint_position(model, data, "descent_vehicle_free")[2]
+        target_z = _clamp(current_z + RECOAT_RATE_M_PER_STEP * 2.5, BOTTOM_Z, TOP_Z)
+        _apply_descent_controllers(model, data, target_z, False, painting)
         _sync(model, data, viewer)
 
 
@@ -283,16 +377,16 @@ def _apply_descent_controllers(
     _apply_standing_posture_control(model, data)
 
     normal_force = _roller_wall_force(model, data)
-    roller_x = WALL_FACE_X - 0.018 + 0.0004 * (ROLLER_TARGET_FORCE_N - normal_force)
-    roller_x = max(WALL_FACE_X - 0.035, min(WALL_FACE_X - 0.004, roller_x))
+    roller_x = WALL_FACE_X - 0.034 + 0.000005 * (ROLLER_TARGET_FORCE_N - normal_force)
+    roller_x = max(WALL_FACE_X - 0.038, min(WALL_FACE_X - 0.031, roller_x))
     _apply_freejoint_position_control(
         model,
         data,
         "paint_roller_head_free",
         (roller_x, 0.0, vehicle_pos[2] + ROLLER_RELATIVE_Z),
-        kp=420.0,
-        kd=72.0,
-        max_force=320.0,
+        kp=160.0,
+        kd=40.0,
+        max_force=80.0,
         gravity_body="paint_roller_head",
     )
 
@@ -301,6 +395,7 @@ def _apply_descent_controllers(
         painting.force_samples.append(normal_force)
     if painting_enabled:
         _update_paint_swaths(model, data, painting, normal_force)
+    _update_paint_particles(model, data, painting, normal_force, painting_enabled)
 
     _align_paint_tool_to_hand(model, data, vehicle_pos[2])
 
@@ -369,6 +464,24 @@ def _hide_paint_swaths(model: object) -> None:
     for index in range(PAINT_SWATH_COUNT):
         geom_id = model.geom(f"paint_swath_{index:02d}").id
         model.geom_rgba[geom_id, 3] = 0.0
+    for index in range(PAINT_PARTICLE_COUNT):
+        geom_id = model.geom(f"paint_particle_{index:02d}").id
+        model.geom_rgba[geom_id, 3] = 0.0
+
+
+def _sense_descent_state(model: object, data: object, painting: PaintingState) -> DescentSensors:
+    vehicle_z = _freejoint_position(model, data, "descent_vehicle_free")[2]
+    roller_z = _freejoint_position(model, data, "paint_roller_head_free")[2]
+    covered = sum(1 for alpha in painting.swath_alpha if alpha >= PAINT_COVERED_ALPHA)
+    coverage_ratio = covered / PAINT_SWATH_COUNT
+    weak_swaths = tuple(index for index, alpha in enumerate(painting.swath_alpha) if alpha < PAINT_COVERED_ALPHA)
+    return DescentSensors(
+        vehicle_z=vehicle_z,
+        roller_z=roller_z,
+        normal_force=_roller_wall_force(model, data),
+        coverage_ratio=coverage_ratio,
+        weak_swaths=weak_swaths,
+    )
 
 
 def _update_paint_swaths(
@@ -380,11 +493,11 @@ def _update_paint_swaths(
     roller_world_z = _freejoint_position(model, data, "paint_roller_head_free")[2]
     force_quality = max(0.0, min(1.0, normal_force / ROLLER_TARGET_FORCE_N))
     if normal_force >= ROLLER_MIN_PAINT_FORCE_N and painting.last_contact_z is not None:
-        swept_min = min(roller_world_z, painting.last_contact_z) - 0.11
-        swept_max = max(roller_world_z, painting.last_contact_z) + 0.11
+        swept_min = min(roller_world_z, painting.last_contact_z) - 0.30
+        swept_max = max(roller_world_z, painting.last_contact_z) + 0.30
     else:
-        swept_min = roller_world_z - 0.11
-        swept_max = roller_world_z + 0.11
+        swept_min = roller_world_z - 0.30
+        swept_max = roller_world_z + 0.30
     for index in range(PAINT_SWATH_COUNT):
         geom_id = model.geom(f"paint_swath_{index:02d}").id
         swath_world_z = 1.7 + PAINT_SWATH_TOP_LOCAL_Z - index * PAINT_SWATH_SPACING
@@ -395,6 +508,40 @@ def _update_paint_swaths(
         model.geom_rgba[geom_id, 3] = painting.swath_alpha[index]
     if normal_force >= ROLLER_MIN_PAINT_FORCE_N:
         painting.last_contact_z = roller_world_z
+
+
+def _update_paint_particles(
+    model: object,
+    data: object,
+    painting: PaintingState,
+    normal_force: float,
+    painting_enabled: bool,
+) -> None:
+    roller_world_z = _freejoint_position(model, data, "paint_roller_head_free")[2]
+    if painting_enabled and normal_force >= ROLLER_MIN_PAINT_FORCE_N:
+        force_quality = max(0.0, min(1.0, normal_force / ROLLER_TARGET_FORCE_N))
+        for offset in (-0.09, 0.0, 0.09):
+            particle = painting.particles[painting.next_particle]
+            particle.z = roller_world_z + 0.035 * math.sin(painting.painted_steps + offset * 20.0)
+            particle.y = offset
+            particle.alpha = min(1.0, 0.35 + 0.6 * force_quality)
+            particle.drip_rate = 0.0004 + 0.0016 * force_quality
+            painting.next_particle = (painting.next_particle + 1) % PAINT_PARTICLE_COUNT
+
+    for index, particle in enumerate(painting.particles):
+        geom_id = model.geom(f"paint_particle_{index:02d}").id
+        if particle.alpha <= 0.01:
+            model.geom_rgba[geom_id, 3] = 0.0
+            continue
+        particle.z = max(BOTTOM_Z - 0.08, particle.z - particle.drip_rate)
+        particle.alpha *= 0.996
+        model.geom_pos[geom_id] = (-0.185, particle.y, particle.z - 1.7)
+        model.geom_rgba[geom_id, 3] = particle.alpha
+
+
+def _vehicle_z_for_swath(index: int) -> float:
+    swath_world_z = 1.7 + PAINT_SWATH_TOP_LOCAL_Z - index * PAINT_SWATH_SPACING
+    return _clamp(swath_world_z - ROLLER_RELATIVE_Z, BOTTOM_Z, TOP_Z)
 
 
 def _roller_wall_force(model: object, data: object) -> float:
@@ -512,6 +659,10 @@ def _sync(model: object, data: object, viewer: object | None) -> None:
 
 def _frames(base_frames: int, speed: float) -> int:
     return max(520, int(base_frames / max(speed, 0.05)))
+
+
+def _clamp(value: float, minimum: float, maximum: float) -> float:
+    return max(minimum, min(maximum, value))
 
 
 def _yaw_quat(yaw: float) -> tuple[float, float, float, float]:
