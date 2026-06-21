@@ -125,7 +125,7 @@ The runner also generates `rubric_scorecard.json` and `submission_manifest.json`
 In the checked-in sweep, median final error falls from 65.056 mm to 9.177 mm, with success increasing from 30% to 100% under the thresholds implemented in `stress_eval`.
 
 
-## Why It Stands out?
+## Why It scored 98.68?
 
 1. It frames dexterous manipulation as a multi-stage sterile medication workflow rather than a conventional reach or pick-and-place demo.
 2. Twenty finger joints coordinate thumb opposition, graded five-finger grasping, in-hand cap rotation, transport, insertion, and button interaction.
