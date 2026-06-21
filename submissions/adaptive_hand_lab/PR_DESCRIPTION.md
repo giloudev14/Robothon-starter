@@ -1,32 +1,68 @@
+## Adaptive Hand Lab
+
 Registration UUID: fd793b35-a006-4607-81de-339ec1bf4757
 
-## Project Summary
+### Project Summary
 
-- Project name: Adaptive Hand Lab
-- Robot platform: Procedural MuJoCo five-finger dexterous hand with 25 actuated channels, thumb opposition, gantry wrist control, free-body vial/cap objects, touch sensors, frame sensors, collisions, and a slide-actuated audit button.
-- Task goal: Complete a sterile medication handling workflow: scan, visual-servo to vial, five-finger grasp, in-hand cap rotation, transport, pod insertion, audit-button press, slip recovery, and trajectory export.
-- Technical approach: Minimum-jerk stage planner with closed-loop residual corrections from visual-servo error, contact balance, and slip-observer signals.
-- Core features: Multi-finger contact timeline, residual policy card, fixed-seed disturbance evaluation, generated MP4 demo, sensor-rich trajectory JSON, and rubric scorecard.
-- Highlights: Designed to cover all eight scoring dimensions, especially MuJoCo depth, autonomous control, dexterous manipulation, engineering quality, presentation, and innovation.
+Adaptive Hand Lab is a self-contained MuJoCo dexterity submission for FFAI Robothon 2026. A five-finger gantry-mounted hand scans a sterile workspace, approaches and grasps a medication vial, rotates its cap in-hand, transports the vial to a sterile pod, inserts it, presses an audit button, recovers from a deterministic slip disturbance, and exports video and structured controller evidence.
 
-## How To Run
+### Key Innovations
+
+- **Five-finger manipulation:** Twenty independently actuated finger joints coordinate thumb opposition, a balanced vial grasp, in-hand cap rotation, transport, insertion, and partial release.
+- **Long-horizon medication workflow:** Eight phases cover workspace scan, visual-servo approach, adaptive grasp, cap rotation, transport, pod insertion, audit, and slip recovery.
+- **Sensor-rich MuJoCo model:** 25 actuators, 37 generalized velocities, 11 frame-position/joint-position/touch sensors, free-joint task objects, and 26 geoms.
+- **Residual control:** A deterministic minimum-jerk stage planner applies bounded visual-servo corrections while contact-balance and slip-observer signals track grasp stability and recovery.
+- **Robustness evidence:** Forty fixed-seed perturbation cases spanning initial pose, cap friction, and slip impulses compare the residual controller with its baseline.
+- **Headless rendering:** A deterministic telemetry-rich schematic video is generated when MuJoCo offscreen rendering is unavailable.
+
+### Recorded Results
+
+- Runtime task success: 100%
+- Workflow completion: 8/8 task results
+- Peak active fingers: 5
+- Stable five-finger samples: 227
+- Final slip-observer error: 0.059 mm
+- Median visual-servo error: 19.08 mm raw, 5.77 mm corrected
+- Visual-servo error reduction: 69.76%
+- Residual-policy success: 100% across 40 robustness cases
+- Baseline success: 30%
+- Median endpoint error: 65.056 mm baseline, 9.177 mm with residual control
+
+### Run Instructions
+
+From the repository root:
 
 ```bash
-python3 -m pip install -r requirements.txt
-python submissions/adaptive_hand_lab/run_adaptive_hand_lab.py
+python3 -m venv .venv
+.venv/bin/python -m pip install -r submissions/adaptive_hand_lab/requirements.txt
+.venv/bin/python submissions/adaptive_hand_lab/run_adaptive_hand_lab.py
 ```
 
 Quick smoke test:
 
 ```bash
-python submissions/adaptive_hand_lab/run_adaptive_hand_lab.py --quick
-python submissions/adaptive_hand_lab/validate_submission.py
+.venv/bin/python submissions/adaptive_hand_lab/run_adaptive_hand_lab.py --quick
 ```
 
-## Demo Video
+Validate the completed package:
 
-- Generated video: `submissions/adaptive_hand_lab/artifacts/adaptive_hand_lab_demo.mp4`
-- Report: `submissions/adaptive_hand_lab/artifacts/adaptive_hand_lab_report.json`
-- Evaluation: `submissions/adaptive_hand_lab/artifacts/adaptive_hand_lab_eval.json`
-- Contact timeline: `submissions/adaptive_hand_lab/artifacts/adaptive_hand_lab_contact_timeline.json`
-- Policy card: `submissions/adaptive_hand_lab/artifacts/adaptive_hand_lab_policy_card.json`
+```bash
+.venv/bin/python submissions/adaptive_hand_lab/validate_submission.py
+```
+
+### Submission Files
+
+- `adaptive_hand_lab_scene.xml` — MuJoCo hand, sterile workcell, task objects, actuators, and sensors
+- `run_adaptive_hand_lab.py` — Controller, simulation, rendering, artifact export, and robustness evaluation
+- `validate_submission.py` — Submission package and metric consistency checks
+- `requirements.txt` — Python dependencies
+- `README.md` — Full project documentation and evidence disclosures
+- `evaluation_report.json` — Rubric-aligned evidence index
+- `registration.json` — Participant and registration metadata
+- `artifacts/adaptive_hand_lab_demo.mp4` — Generated demonstration
+- `artifacts/adaptive_hand_lab_trajectory.json` — Sampled actions, state, feedback, contact, and sensor values
+- `artifacts/adaptive_hand_lab_report.json` — Runtime result, model statistics, task results, and aggregate metrics
+- `artifacts/adaptive_hand_lab_eval.json` — Forty baseline/residual perturbation comparisons
+- `artifacts/adaptive_hand_lab_contact_timeline.json` — Five-finger contact, balance, and slip-recovery timeline
+- `artifacts/adaptive_hand_lab_policy_card.json` — Controller topology and closed-loop metrics
+- `artifacts/adaptive_hand_lab_narration.srt` — Demonstration narration track
