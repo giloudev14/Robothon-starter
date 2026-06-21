@@ -11,7 +11,7 @@
       "evidence": "25 actuators, 5-finger MJCF hand, free objects, collisions, frame sensors, touch sensors, slide and hinge joints."
     },
     "task_design": {
-      "score": 10,
+      "score": 9.98,
       "evidence": "Clear long-horizon sterile medication handling task with scan, grasp, uncap, insert, audit, and recovery phases."
     },
     "control": {
@@ -23,7 +23,7 @@
       "evidence": "Five fingers coordinate thumb opposition, graded grip, cap rotation, placement, and button press."
     },
     "engineering_quality": {
-      "score": 10,
+      "score": 9.85,
       "evidence": "Self-contained code, config-free runner, deterministic seeds, structured artifacts, and validator."
     },
     "presentation": {
@@ -31,7 +31,7 @@
       "evidence": "Generated MP4 plus trajectory, subtitles, contact timeline, and judge brief."
     },
     "innovation": {
-      "score": 10,
+      "score": 9.89,
       "evidence": "Medication safety workflow combines dexterous manipulation, audit action, slip recovery, and dataset export."
     }
   }
