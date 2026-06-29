@@ -1,0 +1,17 @@
+{
+  "description": "Real-world inspired obstacle field used by Robot Autonomous Perception.",
+  "lanes_y": [-0.62, 0.0, 0.62],
+  "obstacles": [
+    {"name": "construction_cones", "kind": "slalom_posts", "x": -1.10, "lane": -1, "height_m": 0.34, "width_m": 0.28, "hazard": 0.85},
+    {"name": "split_stairs_12deg", "kind": "stairs", "x": -0.48, "lane": 0, "height_m": 0.18, "slope_deg": 12, "steps": 3, "hazard": 0.18},
+    {"name": "delivery_crates", "kind": "solid_block", "x": 0.24, "lane": 1, "height_m": 0.42, "width_m": 0.46, "hazard": 0.95},
+    {"name": "curb_and_gutter", "kind": "curb", "x": 0.84, "lane": -1, "height_m": 0.12, "width_m": 0.72, "hazard": 0.28},
+    {"name": "broken_paver_gap", "kind": "gap", "x": 1.42, "lane": 0, "depth_m": 0.16, "width_m": 0.50, "hazard": 0.74},
+    {"name": "split_stairs_22deg", "kind": "stairs", "x": 2.02, "lane": 1, "height_m": 0.26, "slope_deg": 22, "steps": 4, "hazard": 0.34},
+    {"name": "traffic_barrier", "kind": "solid_block", "x": 2.66, "lane": 0, "height_m": 0.55, "width_m": 0.64, "hazard": 1.0},
+    {"name": "fallen_sidewalk_sign", "kind": "solid_block", "x": 2.84, "lane": -1, "height_m": 0.40, "width_m": 0.44, "hazard": 0.92},
+    {"name": "service_ramp_8deg", "kind": "ramp", "x": 3.30, "lane": -1, "height_m": 0.16, "slope_deg": 8, "hazard": 0.12},
+    {"name": "pipe_cluster", "kind": "cylinders", "x": 3.92, "lane": 1, "height_m": 0.24, "width_m": 0.54, "hazard": 0.72},
+    {"name": "final_split_stairs_16deg", "kind": "stairs", "x": 4.52, "lane": 0, "height_m": 0.22, "slope_deg": 16, "steps": 4, "hazard": 0.22}
+  ]
+}

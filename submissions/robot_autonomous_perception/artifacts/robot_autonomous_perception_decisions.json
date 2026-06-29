@@ -1,0 +1,450 @@
+{
+  "decisions": [
+    {
+      "index": 0,
+      "x_m": -1.45,
+      "current_lane": 0,
+      "chosen_lane": 0,
+      "action": "walk_clear",
+      "options": {
+        "-1": {
+          "total_cost": 11.48,
+          "terrain_cost": 9.85,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [
+            {
+              "obstacle": "construction_cones",
+              "kind": "slalom_posts",
+              "action": "blocked",
+              "cost": 9.85
+            }
+          ],
+          "max_height_m": 0.34,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 0.0,
+          "terrain_cost": 0.0,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        }
+      }
+    },
+    {
+      "index": 1,
+      "x_m": -0.88,
+      "current_lane": 0,
+      "chosen_lane": 0,
+      "action": "ascend_stairs",
+      "options": {
+        "-1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 1.43,
+          "terrain_cost": 1.43,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [
+            {
+              "obstacle": "split_stairs_12deg",
+              "kind": "stairs",
+              "action": "ascend_stairs",
+              "cost": 1.43
+            }
+          ],
+          "max_height_m": 0.18,
+          "max_slope_deg": 12.0
+        },
+        "1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        }
+      }
+    },
+    {
+      "index": 2,
+      "x_m": -0.22,
+      "current_lane": 0,
+      "chosen_lane": 0,
+      "action": "walk_clear",
+      "options": {
+        "-1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 0.0,
+          "terrain_cost": 0.0,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "1": {
+          "total_cost": 11.58,
+          "terrain_cost": 9.95,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [
+            {
+              "obstacle": "delivery_crates",
+              "kind": "solid_block",
+              "action": "blocked",
+              "cost": 9.95
+            }
+          ],
+          "max_height_m": 0.42,
+          "max_slope_deg": 0.0
+        }
+      }
+    },
+    {
+      "index": 3,
+      "x_m": 0.44,
+      "current_lane": 0,
+      "chosen_lane": 0,
+      "action": "walk_clear",
+      "options": {
+        "-1": {
+          "total_cost": 2.91,
+          "terrain_cost": 1.28,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [
+            {
+              "obstacle": "curb_and_gutter",
+              "kind": "curb",
+              "action": "step_curb",
+              "cost": 1.28
+            }
+          ],
+          "max_height_m": 0.12,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 0.0,
+          "terrain_cost": 0.0,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        }
+      }
+    },
+    {
+      "index": 4,
+      "x_m": 1.08,
+      "current_lane": 0,
+      "chosen_lane": -1,
+      "action": "walk_clear",
+      "options": {
+        "-1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 6.48,
+          "terrain_cost": 6.48,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [
+            {
+              "obstacle": "broken_paver_gap",
+              "kind": "gap",
+              "action": "avoid_gap",
+              "cost": 6.48
+            }
+          ],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        }
+      }
+    },
+    {
+      "index": 5,
+      "x_m": 1.72,
+      "current_lane": -1,
+      "chosen_lane": -1,
+      "action": "walk_clear",
+      "options": {
+        "-1": {
+          "total_cost": 0.08,
+          "terrain_cost": 0.0,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 1.55,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "1": {
+          "total_cost": 5.17,
+          "terrain_cost": 1.99,
+          "lateral_cost": 3.1,
+          "perceived_obstacles": [
+            {
+              "obstacle": "split_stairs_22deg",
+              "kind": "stairs",
+              "action": "ascend_stairs",
+              "cost": 1.99
+            }
+          ],
+          "max_height_m": 0.26,
+          "max_slope_deg": 22.0
+        }
+      }
+    },
+    {
+      "index": 6,
+      "x_m": 2.36,
+      "current_lane": -1,
+      "chosen_lane": 1,
+      "action": "walk_clear",
+      "options": {
+        "-1": {
+          "total_cost": 10.0,
+          "terrain_cost": 9.92,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [
+            {
+              "obstacle": "fallen_sidewalk_sign",
+              "kind": "solid_block",
+              "action": "blocked",
+              "cost": 9.92
+            }
+          ],
+          "max_height_m": 0.4,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 11.55,
+          "terrain_cost": 10.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [
+            {
+              "obstacle": "traffic_barrier",
+              "kind": "solid_block",
+              "action": "blocked",
+              "cost": 10.0
+            }
+          ],
+          "max_height_m": 0.55,
+          "max_slope_deg": 0.0
+        },
+        "1": {
+          "total_cost": 3.18,
+          "terrain_cost": 0.0,
+          "lateral_cost": 3.1,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        }
+      }
+    },
+    {
+      "index": 7,
+      "x_m": 3.0,
+      "current_lane": 1,
+      "chosen_lane": 1,
+      "action": "walk_clear",
+      "options": {
+        "-1": {
+          "total_cost": 13.87,
+          "terrain_cost": 10.69,
+          "lateral_cost": 3.1,
+          "perceived_obstacles": [
+            {
+              "obstacle": "fallen_sidewalk_sign",
+              "kind": "solid_block",
+              "action": "blocked",
+              "cost": 9.92
+            },
+            {
+              "obstacle": "service_ramp_8deg",
+              "kind": "ramp",
+              "action": "ascend_ramp",
+              "cost": 0.77
+            }
+          ],
+          "max_height_m": 0.4,
+          "max_slope_deg": 8.0
+        },
+        "0": {
+          "total_cost": 1.55,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "1": {
+          "total_cost": 0.08,
+          "terrain_cost": 0.0,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        }
+      }
+    },
+    {
+      "index": 8,
+      "x_m": 3.66,
+      "current_lane": 1,
+      "chosen_lane": 0,
+      "action": "walk_clear",
+      "options": {
+        "-1": {
+          "total_cost": 3.18,
+          "terrain_cost": 0.0,
+          "lateral_cost": 3.1,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 1.55,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "1": {
+          "total_cost": 3.0,
+          "terrain_cost": 2.92,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [
+            {
+              "obstacle": "pipe_cluster",
+              "kind": "cylinders",
+              "action": "step_over",
+              "cost": 2.92
+            }
+          ],
+          "max_height_m": 0.24,
+          "max_slope_deg": 0.0
+        }
+      }
+    },
+    {
+      "index": 9,
+      "x_m": 4.28,
+      "current_lane": 0,
+      "chosen_lane": 0,
+      "action": "ascend_stairs",
+      "options": {
+        "-1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 1.47,
+          "terrain_cost": 1.47,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [
+            {
+              "obstacle": "final_split_stairs_16deg",
+              "kind": "stairs",
+              "action": "ascend_stairs",
+              "cost": 1.47
+            }
+          ],
+          "max_height_m": 0.22,
+          "max_slope_deg": 16.0
+        },
+        "1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        }
+      }
+    },
+    {
+      "index": 10,
+      "x_m": 4.92,
+      "current_lane": 0,
+      "chosen_lane": 0,
+      "action": "walk_clear",
+      "options": {
+        "-1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "0": {
+          "total_cost": 0.0,
+          "terrain_cost": 0.0,
+          "lateral_cost": 0.0,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        },
+        "1": {
+          "total_cost": 1.63,
+          "terrain_cost": 0.0,
+          "lateral_cost": 1.55,
+          "perceived_obstacles": [],
+          "max_height_m": 0.0,
+          "max_slope_deg": 0.0
+        }
+      }
+    }
+  ]
+}

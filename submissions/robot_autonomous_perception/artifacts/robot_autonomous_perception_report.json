@@ -1,0 +1,1489 @@
+{
+  "project": "Robot Autonomous Perception",
+  "robot_platform": "Futurist humanoid from assets/Futurist",
+  "task": "A humanoid robot autonomously perceives a real-world obstacle corridor and chooses left, right, or stair/ramp ascent without a scripted final route.",
+  "success": true,
+  "model": "/root/v2/Robothon-starter/assets/Futurist/futurist.urdf",
+  "scene_xml": "/root/v2/Robothon-starter/submissions/robot_autonomous_perception/scene.xml",
+  "video": "/root/v2/Robothon-starter/submissions/robot_autonomous_perception/artifacts/robot_autonomous_perception_demo.mp4",
+  "trajectory": "/root/v2/Robothon-starter/submissions/robot_autonomous_perception/artifacts/robot_autonomous_perception_trajectory.json",
+  "decisions": "/root/v2/Robothon-starter/submissions/robot_autonomous_perception/artifacts/robot_autonomous_perception_decisions.json",
+  "duration_s": 14.0,
+  "fps": 24,
+  "mujoco_depth": {
+    "nq": 49,
+    "nv": 46,
+    "ngeom": 128,
+    "obstacle_geoms": 11
+  },
+  "autonomy_metrics": {
+    "decision_points": 11,
+    "lane_changes": 3,
+    "ascend_decisions": 2,
+    "obstacles_perceived": 11,
+    "final_x_m": 5.35004
+  },
+  "final_base_pos": [
+    5.35004,
+    0.0,
+    0.96877
+  ],
+  "trajectory_samples": [
+    {
+      "time_s": 0.0,
+      "base_pos": [
+        -1.85,
+        0.0,
+        0.98
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 0.125,
+      "base_pos": [
+        -1.85,
+        0.0,
+        1.00163
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 0.25,
+      "base_pos": [
+        -1.85,
+        0.0,
+        0.99875
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 0.375,
+      "base_pos": [
+        -1.85,
+        0.0,
+        0.97468
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 0.5,
+      "base_pos": [
+        -1.84999,
+        0.0,
+        0.95663
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 0.625,
+      "base_pos": [
+        -1.84971,
+        0.0,
+        0.96477
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 0.75,
+      "base_pos": [
+        -1.84832,
+        0.0,
+        0.98981
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 0.875,
+      "base_pos": [
+        -1.84446,
+        0.0,
+        1.00397
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 1.0,
+      "base_pos": [
+        -1.83633,
+        0.0,
+        0.99191
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 1.125,
+      "base_pos": [
+        -1.8219,
+        0.0,
+        0.96702
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 1.25,
+      "base_pos": [
+        -1.79903,
+        0.0,
+        0.95609
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 1.375,
+      "base_pos": [
+        -1.76574,
+        0.0,
+        0.97043
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 1.5,
+      "base_pos": [
+        -1.72035,
+        0.0,
+        0.99469
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 1.625,
+      "base_pos": [
+        -1.66178,
+        0.0,
+        1.00374
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 1.75,
+      "base_pos": [
+        -1.58969,
+        0.0,
+        0.98866
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 1.875,
+      "base_pos": [
+        -1.5048,
+        0.0,
+        0.96499
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 2.0,
+      "base_pos": [
+        -1.40906,
+        0.0,
+        0.95624
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 2.125,
+      "base_pos": [
+        -1.30592,
+        0.0,
+        0.97071
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 2.25,
+      "base_pos": [
+        -1.2005,
+        0.0,
+        0.99408
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 0,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 2.375,
+      "base_pos": [
+        -1.09988,
+        0.0,
+        1.00393
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 1,
+      "chosen_lane": 0,
+      "chosen_cost": 1.43
+    },
+    {
+      "time_s": 2.5,
+      "base_pos": [
+        -1.01321,
+        0.0,
+        0.99118
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 1,
+      "chosen_lane": 0,
+      "chosen_cost": 1.43
+    },
+    {
+      "time_s": 2.625,
+      "base_pos": [
+        -0.95197,
+        0.0,
+        0.96801
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 1,
+      "chosen_lane": 0,
+      "chosen_cost": 1.43
+    },
+    {
+      "time_s": 2.75,
+      "base_pos": [
+        -0.92995,
+        0.0,
+        0.94284
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 1,
+      "chosen_lane": 0,
+      "chosen_cost": 1.43
+    },
+    {
+      "time_s": 2.875,
+      "base_pos": [
+        -0.91168,
+        0.0,
+        0.95858
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 1,
+      "chosen_lane": 0,
+      "chosen_cost": 1.43
+    },
+    {
+      "time_s": 3.0,
+      "base_pos": [
+        -0.86327,
+        0.0,
+        0.99397
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 1,
+      "chosen_lane": 0,
+      "chosen_cost": 1.43
+    },
+    {
+      "time_s": 3.125,
+      "base_pos": [
+        -0.78996,
+        0.0,
+        1.01654
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 1,
+      "chosen_lane": 0,
+      "chosen_cost": 1.43
+    },
+    {
+      "time_s": 3.25,
+      "base_pos": [
+        -0.69888,
+        0.0,
+        1.00566
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 1,
+      "chosen_lane": 0,
+      "chosen_cost": 1.43
+    },
+    {
+      "time_s": 3.375,
+      "base_pos": [
+        -0.59911,
+        0.0,
+        1.03126
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 2,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 3.5,
+      "base_pos": [
+        -0.50173,
+        0.0,
+        1.06485
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 2,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 3.625,
+      "base_pos": [
+        -0.41989,
+        0.0,
+        1.07083
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 2,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 3.75,
+      "base_pos": [
+        -0.36881,
+        0.0,
+        1.16391
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 2,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 3.875,
+      "base_pos": [
+        -0.35379,
+        0.0,
+        1.18157
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 2,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 4.0,
+      "base_pos": [
+        -0.29707,
+        0.0,
+        1.18031
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 2,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 4.125,
+      "base_pos": [
+        -0.19398,
+        0.0,
+        0.97967
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 2,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 4.25,
+      "base_pos": [
+        -0.06261,
+        0.0,
+        0.95927
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 2,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 4.375,
+      "base_pos": [
+        0.07639,
+        0.0,
+        0.95902
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 3,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 4.5,
+      "base_pos": [
+        0.1998,
+        0.0,
+        0.97952
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 3,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 4.625,
+      "base_pos": [
+        0.28193,
+        0.0,
+        1.00058
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 3,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 4.75,
+      "base_pos": [
+        0.30491,
+        0.0,
+        1.00084
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 3,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 4.875,
+      "base_pos": [
+        0.37017,
+        0.0,
+        0.97965
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 3,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 5.0,
+      "base_pos": [
+        0.49157,
+        0.0,
+        0.95873
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 3,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 5.125,
+      "base_pos": [
+        0.64184,
+        0.0,
+        0.96019
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 3,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 5.25,
+      "base_pos": [
+        0.79143,
+        0.0,
+        0.98283
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 4,
+      "chosen_lane": -1,
+      "chosen_cost": 1.63
+    },
+    {
+      "time_s": 5.375,
+      "base_pos": [
+        0.90863,
+        0.0,
+        1.00249
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 4,
+      "chosen_lane": -1,
+      "chosen_cost": 1.63
+    },
+    {
+      "time_s": 5.5,
+      "base_pos": [
+        0.95979,
+        0.0,
+        0.99764
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 4,
+      "chosen_lane": -1,
+      "chosen_cost": 1.63
+    },
+    {
+      "time_s": 5.625,
+      "base_pos": [
+        0.99993,
+        -0.03868,
+        1.09333
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 4,
+      "chosen_lane": -1,
+      "chosen_cost": 1.63
+    },
+    {
+      "time_s": 5.75,
+      "base_pos": [
+        1.1112,
+        -0.14647,
+        1.07637
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 4,
+      "chosen_lane": -1,
+      "chosen_cost": 1.63
+    },
+    {
+      "time_s": 5.875,
+      "base_pos": [
+        1.26155,
+        -0.29212,
+        0.96583
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 4,
+      "chosen_lane": -1,
+      "chosen_cost": 1.63
+    },
+    {
+      "time_s": 6.0,
+      "base_pos": [
+        1.41688,
+        -0.4426,
+        0.99125
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 5,
+      "chosen_lane": -1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 6.125,
+      "base_pos": [
+        1.5417,
+        -0.56352,
+        1.00398
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 5,
+      "chosen_lane": -1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 6.25,
+      "base_pos": [
+        1.59936,
+        -0.61938,
+        0.98955
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 5,
+      "chosen_lane": -1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 6.375,
+      "base_pos": [
+        1.63901,
+        -0.62,
+        0.96429
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 5,
+      "chosen_lane": -1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 6.5,
+      "base_pos": [
+        1.75424,
+        -0.62,
+        0.95684
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 5,
+      "chosen_lane": -1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 6.625,
+      "base_pos": [
+        1.90962,
+        -0.62,
+        0.97559
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 5,
+      "chosen_lane": -1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 6.75,
+      "base_pos": [
+        2.06771,
+        -0.62,
+        0.99928
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 6,
+      "chosen_lane": 1,
+      "chosen_cost": 3.18
+    },
+    {
+      "time_s": 6.875,
+      "base_pos": [
+        2.19057,
+        -0.62,
+        1.00132
+      ],
+      "lane": -1,
+      "action": "walk_clear",
+      "active_decision_index": 6,
+      "chosen_lane": 1,
+      "chosen_cost": 3.18
+    },
+    {
+      "time_s": 7.0,
+      "base_pos": [
+        2.24,
+        -0.62,
+        0.97961
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 6,
+      "chosen_lane": 1,
+      "chosen_cost": 3.18
+    },
+    {
+      "time_s": 7.125,
+      "base_pos": [
+        2.28943,
+        -0.52422,
+        0.95839
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 6,
+      "chosen_lane": 1,
+      "chosen_cost": 3.18
+    },
+    {
+      "time_s": 7.25,
+      "base_pos": [
+        2.41229,
+        -0.2862,
+        0.96088
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 6,
+      "chosen_lane": 1,
+      "chosen_cost": 3.18
+    },
+    {
+      "time_s": 7.375,
+      "base_pos": [
+        2.57038,
+        0.02011,
+        0.98409
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 6,
+      "chosen_lane": 1,
+      "chosen_cost": 3.18
+    },
+    {
+      "time_s": 7.5,
+      "base_pos": [
+        2.72576,
+        0.32117,
+        1.00283
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 7,
+      "chosen_lane": 1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 7.625,
+      "base_pos": [
+        2.84099,
+        0.54441,
+        0.99732
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 7,
+      "chosen_lane": 1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 7.75,
+      "base_pos": [
+        2.88064,
+        0.62,
+        0.97373
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 7,
+      "chosen_lane": 1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 7.875,
+      "base_pos": [
+        2.9383,
+        0.62,
+        0.95671
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 7,
+      "chosen_lane": 1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 8.0,
+      "base_pos": [
+        3.06312,
+        0.62,
+        0.96348
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 7,
+      "chosen_lane": 1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 8.125,
+      "base_pos": [
+        3.21845,
+        0.62,
+        0.98682
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 7,
+      "chosen_lane": 1,
+      "chosen_cost": 0.08
+    },
+    {
+      "time_s": 8.25,
+      "base_pos": [
+        3.3688,
+        0.62,
+        1.00329
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 8,
+      "chosen_lane": 0,
+      "chosen_cost": 1.55
+    },
+    {
+      "time_s": 8.375,
+      "base_pos": [
+        3.48007,
+        0.62,
+        0.9969
+      ],
+      "lane": 1,
+      "action": "walk_clear",
+      "active_decision_index": 8,
+      "chosen_lane": 0,
+      "chosen_cost": 1.55
+    },
+    {
+      "time_s": 8.5,
+      "base_pos": [
+        3.52021,
+        0.61981,
+        0.9742
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 8,
+      "chosen_lane": 0,
+      "chosen_cost": 1.55
+    },
+    {
+      "time_s": 8.625,
+      "base_pos": [
+        3.57137,
+        0.57174,
+        0.95712
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 8,
+      "chosen_lane": 0,
+      "chosen_cost": 1.55
+    },
+    {
+      "time_s": 8.75,
+      "base_pos": [
+        3.68857,
+        0.46165,
+        0.96175
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 8,
+      "chosen_lane": 0,
+      "chosen_cost": 1.55
+    },
+    {
+      "time_s": 8.875,
+      "base_pos": [
+        3.83816,
+        0.32113,
+        0.98346
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 8,
+      "chosen_lane": 0,
+      "chosen_cost": 1.55
+    },
+    {
+      "time_s": 9.0,
+      "base_pos": [
+        3.98843,
+        0.17996,
+        1.0019
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 9,
+      "chosen_lane": 0,
+      "chosen_cost": 1.47
+    },
+    {
+      "time_s": 9.125,
+      "base_pos": [
+        4.10983,
+        0.06592,
+        1.00007
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 9,
+      "chosen_lane": 0,
+      "chosen_cost": 1.47
+    },
+    {
+      "time_s": 9.25,
+      "base_pos": [
+        4.17509,
+        0.00462,
+        0.97979
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 9,
+      "chosen_lane": 0,
+      "chosen_cost": 1.47
+    },
+    {
+      "time_s": 9.375,
+      "base_pos": [
+        4.19698,
+        0.0,
+        0.94856
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 9,
+      "chosen_lane": 0,
+      "chosen_cost": 1.47
+    },
+    {
+      "time_s": 9.5,
+      "base_pos": [
+        4.27413,
+        0.0,
+        0.94624
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 9,
+      "chosen_lane": 0,
+      "chosen_cost": 1.47
+    },
+    {
+      "time_s": 9.625,
+      "base_pos": [
+        4.39006,
+        0.0,
+        1.02984
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 9,
+      "chosen_lane": 0,
+      "chosen_cost": 1.47
+    },
+    {
+      "time_s": 9.75,
+      "base_pos": [
+        4.52063,
+        0.0,
+        1.1732
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 9,
+      "chosen_lane": 0,
+      "chosen_cost": 1.47
+    },
+    {
+      "time_s": 9.875,
+      "base_pos": [
+        4.64405,
+        0.0,
+        1.23563
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 10.0,
+      "base_pos": [
+        4.74088,
+        0.0,
+        0.99005
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 10.125,
+      "base_pos": [
+        4.79417,
+        0.0,
+        0.95502
+      ],
+      "lane": 0,
+      "action": "ascend_stairs",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 10.25,
+      "base_pos": [
+        4.80989,
+        0.0,
+        0.95639
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 10.375,
+      "base_pos": [
+        4.86725,
+        0.0,
+        0.97133
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 10.5,
+      "base_pos": [
+        4.95914,
+        0.0,
+        0.99466
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 10.625,
+      "base_pos": [
+        5.06847,
+        0.0,
+        1.00383
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 10.75,
+      "base_pos": [
+        5.1805,
+        0.0,
+        0.98955
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 10.875,
+      "base_pos": [
+        5.28276,
+        0.0,
+        0.96567
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 11.0,
+      "base_pos": [
+        5.36507,
+        0.0,
+        0.95619
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 11.125,
+      "base_pos": [
+        5.41943,
+        0.0,
+        0.97108
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 11.25,
+      "base_pos": [
+        5.43994,
+        0.0,
+        0.99531
+      ],
+      "lane": 0,
+      "action": "walk_clear",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 11.375,
+      "base_pos": [
+        5.43785,
+        0.0,
+        1.00352
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 11.5,
+      "base_pos": [
+        5.43186,
+        0.0,
+        0.9867
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 11.625,
+      "base_pos": [
+        5.42338,
+        0.0,
+        0.9626
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 11.75,
+      "base_pos": [
+        5.41354,
+        0.0,
+        0.95738
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 11.875,
+      "base_pos": [
+        5.40323,
+        0.0,
+        0.97703
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 12.0,
+      "base_pos": [
+        5.39314,
+        0.0,
+        1.00002
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 12.125,
+      "base_pos": [
+        5.38377,
+        0.0,
+        1.00069
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 12.25,
+      "base_pos": [
+        5.37547,
+        0.0,
+        0.9781
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 12.375,
+      "base_pos": [
+        5.36841,
+        0.0,
+        0.95763
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 12.5,
+      "base_pos": [
+        5.36268,
+        0.0,
+        0.96247
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 12.625,
+      "base_pos": [
+        5.35824,
+        0.0,
+        0.98719
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 12.75,
+      "base_pos": [
+        5.35499,
+        0.0,
+        1.00375
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 12.875,
+      "base_pos": [
+        5.35275,
+        0.0,
+        0.99342
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 13.0,
+      "base_pos": [
+        5.35134,
+        0.0,
+        0.96796
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 13.125,
+      "base_pos": [
+        5.35054,
+        0.0,
+        0.95606
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 13.25,
+      "base_pos": [
+        5.35016,
+        0.0,
+        0.97089
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 13.375,
+      "base_pos": [
+        5.35004,
+        0.0,
+        0.99577
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 13.5,
+      "base_pos": [
+        5.35004,
+        0.0,
+        1.00327
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 13.625,
+      "base_pos": [
+        5.35004,
+        0.0,
+        0.98546
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 13.75,
+      "base_pos": [
+        5.35004,
+        0.0,
+        0.96184
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    },
+    {
+      "time_s": 13.875,
+      "base_pos": [
+        5.35004,
+        0.0,
+        0.9576
+      ],
+      "lane": 0,
+      "action": "goal",
+      "active_decision_index": 10,
+      "chosen_lane": 0,
+      "chosen_cost": 0.0
+    }
+  ]
+}

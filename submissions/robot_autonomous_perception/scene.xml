@@ -1,0 +1,315 @@
+<mujoco model="futurist">
+  <compiler angle="radian" meshdir="../../assets/Futurist/"/>
+
+  <visual>
+    <global offwidth="1280" offheight="720"/>
+  </visual>
+
+  <asset>
+    <mesh name="body_hull" content_type="model/stl" file="body_hull.stl"/>
+    <mesh name="left_hip_roll_hull" content_type="model/stl" file="left_hip_roll_hull.stl"/>
+    <mesh name="left_hip_yaw_hull" content_type="model/stl" file="left_hip_yaw_hull.stl"/>
+    <mesh name="left_hip_pitch_hull" content_type="model/stl" file="left_hip_pitch_hull.stl"/>
+    <mesh name="left_tarsus_hull" content_type="model/stl" file="left_tarsus_hull.stl"/>
+    <mesh name="left_toe_pitch_hull" content_type="model/stl" file="left_toe_pitch_hull.stl"/>
+    <mesh name="left_toe_roll_hull" content_type="model/stl" file="left_toe_roll_hull.stl"/>
+    <mesh name="left_toe_A_hull" content_type="model/stl" file="left_toe_A_hull.stl"/>
+    <mesh name="left_toe_A_rod_hull" content_type="model/stl" file="left_toe_A_rod_hull.stl"/>
+    <mesh name="left_toe_B_hull" content_type="model/stl" file="left_toe_B_hull.stl"/>
+    <mesh name="left_toe_B_rod_hull" content_type="model/stl" file="left_toe_B_rod_hull.stl"/>
+    <mesh name="right_hip_roll_hull" content_type="model/stl" file="right_hip_roll_hull.stl"/>
+    <mesh name="right_hip_yaw_hull" content_type="model/stl" file="right_hip_yaw_hull.stl"/>
+    <mesh name="right_hip_pitch_hull" content_type="model/stl" file="right_hip_pitch_hull.stl"/>
+    <mesh name="right_tarsus_hull" content_type="model/stl" file="right_tarsus_hull.stl"/>
+    <mesh name="right_toe_pitch_hull" content_type="model/stl" file="right_toe_pitch_hull.stl"/>
+    <mesh name="right_toe_roll_hull" content_type="model/stl" file="right_toe_roll_hull.stl"/>
+    <mesh name="right_toe_A_hull" content_type="model/stl" file="right_toe_A_hull.stl"/>
+    <mesh name="right_toe_A_rod_hull" content_type="model/stl" file="right_toe_A_rod_hull.stl"/>
+    <mesh name="right_toe_B_hull" content_type="model/stl" file="right_toe_B_hull.stl"/>
+    <mesh name="right_toe_B_rod_hull" content_type="model/stl" file="right_toe_B_rod_hull.stl"/>
+    <mesh name="left_arm_link01_hull" content_type="model/stl" file="left_arm_link01_hull.stl"/>
+    <mesh name="left_arm_link02_hull" content_type="model/stl" file="left_arm_link02_hull.stl"/>
+    <mesh name="left_arm_link03_hull" content_type="model/stl" file="left_arm_link03_hull.stl"/>
+    <mesh name="left_arm_link04_hull" content_type="model/stl" file="left_arm_link04_hull.stl"/>
+    <mesh name="left_arm_link05_hull" content_type="model/stl" file="left_arm_link05_hull.stl"/>
+    <mesh name="left_arm_link06_hull" content_type="model/stl" file="left_arm_link06_hull.stl"/>
+    <mesh name="left_arm_link07_hull" content_type="model/stl" file="left_arm_link07_hull.stl"/>
+    <mesh name="left_hand_hull" content_type="model/stl" file="left_hand_hull.stl"/>
+    <mesh name="left_wrist_motor_A_hull" content_type="model/stl" file="left_wrist_motor_A_hull.stl"/>
+    <mesh name="left_wrist_rod_A_hull" content_type="model/stl" file="left_wrist_rod_A_hull.stl"/>
+    <mesh name="left_wrist_motor_B_hull" content_type="model/stl" file="left_wrist_motor_B_hull.stl"/>
+    <mesh name="left_wrist_rod_B_hull" content_type="model/stl" file="left_wrist_rod_B_hull.stl"/>
+    <mesh name="right_arm_link01_hull" content_type="model/stl" file="right_arm_link01_hull.stl"/>
+    <mesh name="right_arm_link02_hull" content_type="model/stl" file="right_arm_link02_hull.stl"/>
+    <mesh name="right_arm_link03_hull" content_type="model/stl" file="right_arm_link03_hull.stl"/>
+    <mesh name="right_arm_link04_hull" content_type="model/stl" file="right_arm_link04_hull.stl"/>
+    <mesh name="right_arm_link05_hull" content_type="model/stl" file="right_arm_link05_hull.stl"/>
+    <mesh name="right_arm_link06_hull" content_type="model/stl" file="right_arm_link06_hull.stl"/>
+    <mesh name="right_arm_link07_hull" content_type="model/stl" file="right_arm_link07_hull.stl"/>
+    <mesh name="right_hand_hull" content_type="model/stl" file="right_hand_hull.stl"/>
+    <mesh name="right_wrist_motor_A_hull" content_type="model/stl" file="right_wrist_motor_A_hull.stl"/>
+    <mesh name="right_wrist_rod_A_hull" content_type="model/stl" file="right_wrist_rod_A_hull.stl"/>
+    <mesh name="right_wrist_motor_B_hull" content_type="model/stl" file="right_wrist_motor_B_hull.stl"/>
+    <mesh name="right_wrist_rod_B_hull" content_type="model/stl" file="right_wrist_rod_B_hull.stl"/>
+    <mesh name="head_link01_hull" content_type="model/stl" file="head_link01_hull.stl"/>
+    <mesh name="head_link02_hull" content_type="model/stl" file="head_link02_hull.stl"/>
+    <mesh name="logo" content_type="model/stl" file="logo.stl"/>
+  </asset>
+
+  <worldbody>
+    <geom name="floor" size="0 0 0.05" type="plane" rgba="0.075 0.08 0.082 1"/>
+    <geom name="course_spine" size="3.75 1.03 0.003" pos="1.65 0 0.003" type="box" rgba="0.18 0.19 0.18 1"/>
+    <geom name="lane_-1_surface" size="3.7 0.26 0.004" pos="1.65 -0.62 0.008" type="box" rgba="0.24 0.26 0.25 0.72"/>
+    <geom name="lane_0_surface" size="3.7 0.26 0.004" pos="1.65 0 0.008" type="box" rgba="0.29 0.31 0.29 0.78"/>
+    <geom name="lane_1_surface" size="3.7 0.26 0.004" pos="1.65 0.62 0.008" type="box" rgba="0.24 0.26 0.25 0.72"/>
+    <geom name="start_pad" size="0.2 0.42 0.01" pos="-1.85 0 0.015" type="box" rgba="0.05 0.34 1 0.82"/>
+    <geom name="goal_pad" size="0.24 0.48 0.012" pos="5.35 0 0.017" type="box" rgba="0.18 0.95 0.4 0.82"/>
+    <geom name="construction_cones_cone_base_0" size="0.075 0.02" pos="-1.1 -0.78 0.035" type="cylinder" rgba="0.98 0.42 0.08 1"/>
+    <geom name="construction_cones_cone_body_0" size="0.04 0.1224" pos="-1.1 -0.78 0.1428" type="cylinder" rgba="1 0.48 0.08 1"/>
+    <geom name="construction_cones_reflector_0" size="0.045 0.006 0.012" pos="-1.1 -0.821 0.17" type="box" rgba="0.96 0.96 0.84 1"/>
+    <geom name="construction_cones_cone_base_1" size="0.075 0.02" pos="-0.99 -0.58 0.035" type="cylinder" rgba="0.98 0.42 0.08 1"/>
+    <geom name="construction_cones_cone_body_1" size="0.04 0.1224" pos="-0.99 -0.58 0.1428" type="cylinder" rgba="1 0.48 0.08 1"/>
+    <geom name="construction_cones_reflector_1" size="0.045 0.006 0.012" pos="-0.99 -0.621 0.17" type="box" rgba="0.96 0.96 0.84 1"/>
+    <geom name="construction_cones_cone_base_2" size="0.075 0.02" pos="-0.88 -0.4 0.035" type="cylinder" rgba="0.98 0.42 0.08 1"/>
+    <geom name="construction_cones_cone_body_2" size="0.04 0.1224" pos="-0.88 -0.4 0.1428" type="cylinder" rgba="1 0.48 0.08 1"/>
+    <geom name="construction_cones_reflector_2" size="0.045 0.006 0.012" pos="-0.88 -0.441 0.17" type="box" rgba="0.96 0.96 0.84 1"/>
+    <geom name="split_stairs_12deg_tread_1" size="0.064 0.25 0.03" pos="-0.613333 0 0.04" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="split_stairs_12deg_edge_1" size="0.01 0.255 0.012" pos="-0.556 0 0.076" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="split_stairs_12deg_tread_2" size="0.064 0.25 0.06" pos="-0.48 0 0.07" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="split_stairs_12deg_edge_2" size="0.01 0.255 0.012" pos="-0.422667 0 0.136" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="split_stairs_12deg_tread_3" size="0.064 0.25 0.09" pos="-0.346667 0 0.1" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="split_stairs_12deg_edge_3" size="0.01 0.255 0.012" pos="-0.289333 0 0.196" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="split_stairs_12deg_left_handrail" size="0.018 0.232" pos="-0.48 -0.29 0.34" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.2 0.22 0.23 1"/>
+    <geom name="split_stairs_12deg_right_handrail" size="0.018 0.232" pos="-0.48 0.29 0.34" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.2 0.22 0.23 1"/>
+    <geom name="delivery_crates_crate_0" size="0.13 0.12 0.08" pos="0.13 0.55 0.09" type="box" rgba="0.56 0.34 0.18 1"/>
+    <geom name="delivery_crates_crate_lip_0" size="0.135 0.012 0.01" pos="0.13 0.55 0.175" type="box" rgba="0.23 0.15 0.09 1"/>
+    <geom name="delivery_crates_crate_1" size="0.13 0.12 0.08" pos="0.33 0.7 0.09" type="box" rgba="0.56 0.34 0.18 1"/>
+    <geom name="delivery_crates_crate_lip_1" size="0.135 0.012 0.01" pos="0.33 0.7 0.175" type="box" rgba="0.23 0.15 0.09 1"/>
+    <geom name="delivery_crates_crate_2" size="0.13 0.12 0.08" pos="0.24 0.62 0.25" type="box" rgba="0.56 0.34 0.18 1"/>
+    <geom name="delivery_crates_crate_lip_2" size="0.135 0.012 0.01" pos="0.24 0.62 0.335" type="box" rgba="0.23 0.15 0.09 1"/>
+    <geom name="curb_and_gutter_curb_face" size="0.36 0.055 0.06" pos="0.84 -0.62 0.07" type="box" rgba="0.7 0.7 0.65 1"/>
+    <geom name="curb_and_gutter_gutter_channel" size="0.3456 0.05 0.01" pos="0.84 -0.46 0.018" type="box" rgba="0.16 0.18 0.18 1"/>
+    <geom name="broken_paver_gap_dark_void" size="0.25 0.25 0.018" pos="1.42 0 -0.018" type="box" rgba="0.005 0.005 0.006 1"/>
+    <geom name="broken_paver_gap_loose_paver_0" size="0.07 0.085 0.012" pos="1.11 -0.16 0.022" type="box" rgba="0.46 0.45 0.39 1"/>
+    <geom name="broken_paver_gap_loose_paver_1" size="0.07 0.085 0.012" pos="1.24 0.16 0.022" type="box" rgba="0.46 0.45 0.39 1"/>
+    <geom name="broken_paver_gap_loose_paver_2" size="0.07 0.085 0.012" pos="1.6 -0.16 0.022" type="box" rgba="0.46 0.45 0.39 1"/>
+    <geom name="broken_paver_gap_loose_paver_3" size="0.07 0.085 0.012" pos="1.73 0.16 0.022" type="box" rgba="0.46 0.45 0.39 1"/>
+    <geom name="split_stairs_22deg_tread_1" size="0.048 0.25 0.0325" pos="1.87 0.62 0.0425" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="split_stairs_22deg_edge_1" size="0.01 0.255 0.012" pos="1.913 0.62 0.081" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="split_stairs_22deg_tread_2" size="0.048 0.25 0.065" pos="1.97 0.62 0.075" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="split_stairs_22deg_edge_2" size="0.01 0.255 0.012" pos="2.013 0.62 0.146" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="split_stairs_22deg_tread_3" size="0.048 0.25 0.0975" pos="2.07 0.62 0.1075" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="split_stairs_22deg_edge_3" size="0.01 0.255 0.012" pos="2.113 0.62 0.211" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="split_stairs_22deg_tread_4" size="0.048 0.25 0.13" pos="2.17 0.62 0.14" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="split_stairs_22deg_edge_4" size="0.01 0.255 0.012" pos="2.213 0.62 0.276" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="split_stairs_22deg_left_handrail" size="0.018 0.232" pos="2.02 0.33 0.42" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.2 0.22 0.23 1"/>
+    <geom name="split_stairs_22deg_right_handrail" size="0.018 0.232" pos="2.02 0.91 0.42" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.2 0.22 0.23 1"/>
+    <geom name="traffic_barrier_plastic_body" size="0.32 0.07 0.176" pos="2.66 0 0.286" type="box" rgba="0.95 0.28 0.12 1"/>
+    <geom name="traffic_barrier_white_stripe_0" size="0.03 0.008 0.1265" pos="2.44 -0.073 0.3135" type="box" rgba="0.96 0.96 0.88 1"/>
+    <geom name="traffic_barrier_white_stripe_1" size="0.03 0.008 0.1265" pos="2.66 -0.073 0.3135" type="box" rgba="0.96 0.96 0.88 1"/>
+    <geom name="traffic_barrier_white_stripe_2" size="0.03 0.008 0.1265" pos="2.88 -0.073 0.3135" type="box" rgba="0.96 0.96 0.88 1"/>
+    <geom name="traffic_barrier_foot_-0.24" size="0.08 0.18 0.028" pos="2.42 0 0.045" type="box" rgba="0.1 0.1 0.1 1"/>
+    <geom name="traffic_barrier_foot_0.24" size="0.08 0.18 0.028" pos="2.9 0 0.045" type="box" rgba="0.1 0.1 0.1 1"/>
+    <geom name="fallen_sidewalk_sign_post" size="0.018 0.3" pos="2.84 -0.62 0.09" quat="0.691572 0.691572 -0.147403 0.147403" type="cylinder" rgba="0.58 0.6 0.6 1"/>
+    <geom name="fallen_sidewalk_sign_panel" size="0.18 0.02 0.13" pos="2.94 -0.55 0.19" type="box" rgba="0.05 0.36 0.8 1"/>
+    <geom name="fallen_sidewalk_sign_base" size="0.1 0.08 0.025" pos="2.7 -0.72 0.035" type="box" rgba="0.05 0.05 0.055 1"/>
+    <geom name="service_ramp_8deg_deck" size="0.2 0.25 0.08" pos="3.3 -0.62 0.09" type="box" rgba="0.36 0.45 0.47 1"/>
+    <geom name="service_ramp_8deg_rail_-0.27" size="0.016 0.208" pos="3.3 -0.89 0.29" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.12 0.14 0.15 1"/>
+    <geom name="service_ramp_8deg_rail_0.27" size="0.016 0.208" pos="3.3 -0.35 0.29" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.12 0.14 0.15 1"/>
+    <geom name="pipe_cluster_pipe_0" size="0.065 0.23" pos="3.92 0.48 0.14" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0.72 0.42 0.14 1"/>
+    <geom name="pipe_cluster_cap_0" size="0.066" pos="3.92 0.25 0.14" rgba="0.78 0.5 0.2 1"/>
+    <geom name="pipe_cluster_pipe_1" size="0.065 0.23" pos="3.96 0.62 0.14" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0.72 0.42 0.14 1"/>
+    <geom name="pipe_cluster_cap_1" size="0.066" pos="3.96 0.39 0.14" rgba="0.78 0.5 0.2 1"/>
+    <geom name="pipe_cluster_pipe_2" size="0.065 0.23" pos="4 0.76 0.14" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0.72 0.42 0.14 1"/>
+    <geom name="pipe_cluster_cap_2" size="0.066" pos="4 0.53 0.14" rgba="0.78 0.5 0.2 1"/>
+    <geom name="final_split_stairs_16deg_tread_1" size="0.048 0.25 0.0275" pos="4.37 0 0.0375" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="final_split_stairs_16deg_edge_1" size="0.01 0.255 0.012" pos="4.413 0 0.071" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="final_split_stairs_16deg_tread_2" size="0.048 0.25 0.055" pos="4.47 0 0.065" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="final_split_stairs_16deg_edge_2" size="0.01 0.255 0.012" pos="4.513 0 0.126" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="final_split_stairs_16deg_tread_3" size="0.048 0.25 0.0825" pos="4.57 0 0.0925" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="final_split_stairs_16deg_edge_3" size="0.01 0.255 0.012" pos="4.613 0 0.181" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="final_split_stairs_16deg_tread_4" size="0.048 0.25 0.11" pos="4.67 0 0.12" type="box" rgba="0.58 0.56 0.48 1"/>
+    <geom name="final_split_stairs_16deg_edge_4" size="0.01 0.255 0.012" pos="4.713 0 0.236" type="box" rgba="0.9 0.82 0.46 1"/>
+    <geom name="final_split_stairs_16deg_left_handrail" size="0.018 0.232" pos="4.52 -0.29 0.38" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.2 0.22 0.23 1"/>
+    <geom name="final_split_stairs_16deg_right_handrail" size="0.018 0.232" pos="4.52 0.29 0.38" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.2 0.22 0.23 1"/>
+    <geom name="scan_lane_-1" size="0.16 0.22 0.012" pos="-1.6 -0.62 0.032" type="box" rgba="0.35 0.35 0.35 0.35"/>
+    <geom name="scan_lane_0" size="0.16 0.22 0.012" pos="-1.6 0 0.032" type="box" rgba="0.35 0.35 0.35 0.35"/>
+    <geom name="scan_lane_1" size="0.16 0.22 0.012" pos="-1.6 0.62 0.032" type="box" rgba="0.35 0.35 0.35 0.35"/>
+    <camera name="course_camera" pos="2.05 -4.35 2.05" quat="0.829776 0.556668 0.0222312 0.0331381"/>
+    <light pos="0 -1.6 3.2" dir="0 0.410365 -0.911922" diffuse="1 1 1"/>
+    <light pos="2.3 -2.2 4.2" dir="-0.317854 0.272446 -0.908153" diffuse="0.95 0.92 0.82"/>
+    <light pos="4.8 1.6 2.4" dir="-0.565916 -0.16169 -0.808452" diffuse="0.62 0.66 0.7"/>
+    <body name="base_link">
+      <inertial pos="-0.0708895 -0.00016512 0.161381" quat="0.999988 -0.000602937 -0.00432137 0.00199841" mass="18.8995" diaginertia="0.593791 0.555033 0.184529"/>
+      <joint name="floating_base_joint" type="free"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="body_hull"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="logo"/>
+      <body name="left_hip_roll" pos="-0.0808 0.105 -0.0652" quat="0.65328 0.270598 0.270599 0.653282">
+        <inertial pos="0.00011252 0.0213061 -0.0746514" quat="0.976696 0.214491 -0.00303245 -0.00697166" mass="2.39059" diaginertia="0.00381228 0.00377305 0.00325229"/>
+        <joint name="idx01_left_hip_roll" pos="0 0 0" axis="0 0 1" range="-0.698 0.698" actuatorfrcrange="-120 120"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_hip_roll_hull"/>
+        <body name="left_hip_yaw" pos="0 -0.017 -0.0682" quat="0.499998 0.5 -0.5 0.500002">
+          <inertial pos="-0.00012288 0.0157646 0.108287" quat="0.707134 -0.0264516 0.0255728 0.706122" mass="3.79912" diaginertia="0.0144696 0.00941291 0.00694337"/>
+          <joint name="idx02_left_hip_yaw" pos="0 0 0" axis="0 0 1" range="-1.57 1.57" actuatorfrcrange="-120 120"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_hip_yaw_hull"/>
+          <body name="left_hip_pitch" pos="0 -0.02 0.1205" quat="0.65328 0.653282 0.270598 -0.270599">
+            <inertial pos="-0.0694342 0.00469099 0.0222824" quat="0.037089 0.670738 0.000178007 0.740766" mass="5.92462" diaginertia="0.0944 0.0889272 0.013068"/>
+            <joint name="idx03_left_hip_pitch" pos="0 0 0" axis="0 0 1" range="-1.91986 0.785398" actuatorfrcrange="-140 140"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="left_hip_pitch_hull"/>
+            <body name="left_tarsus" pos="-0.34 0 0">
+              <inertial pos="-0.160949 0.00799881 -0.0216132" quat="0.339542 0.621024 0.54266 0.452284" mass="3.44582" diaginertia="0.0489362 0.0416249 0.0122514"/>
+              <joint name="idx04_left_tarsus" pos="0 0 0" axis="0 0 1" range="-0.0872665 2.44346" actuatorfrcrange="-140 140"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="left_tarsus_hull"/>
+              <geom pos="-0.138 0 -0.0315" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_toe_A_hull"/>
+              <geom pos="-0.137 -0.062992 -0.0315" quat="-3.67321e-06 -1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_toe_A_rod_hull"/>
+              <geom pos="-0.232 0 0.0315" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_toe_B_hull"/>
+              <geom pos="-0.231 -0.063 0.0315" quat="1.56657e-12 -1 2.91982e-05 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_toe_B_rod_hull"/>
+              <body name="left_toe_pitch" pos="-0.377 0 0">
+                <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0877203" diaginertia="1.572e-05 1.148e-05 1.128e-05"/>
+                <joint name="idx05_left_toe_pitch" pos="0 0 0" axis="0 0 1" range="-1.0472 0.523599" actuatorfrcrange="-50 50"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_toe_pitch_hull"/>
+                <body name="left_toe_roll" quat="0.707107 -0.707107 0 0">
+                  <inertial pos="-0.0389834 2.335e-05 0.0316731" quat="0.999914 -0.000251595 -0.0131242 0.000140524" mass="1.21058" diaginertia="0.00701558 0.0065321 0.00111708"/>
+                  <joint name="idx06_left_toe_roll" pos="0 0 0" axis="0 0 1" range="-0.488692 0.488692" actuatorfrcrange="-50 50"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_toe_roll_hull"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="right_hip_roll" pos="-0.0808 -0.105 -0.0652" quat="0.65328 0.270598 0.270599 0.653282">
+        <inertial pos="-0.00011252 0.0213061 -0.0746514" quat="0.976696 0.214491 0.00303245 0.00697166" mass="2.39059" diaginertia="0.00381228 0.00377305 0.00325229"/>
+        <joint name="idx07_right_hip_roll" pos="0 0 0" axis="0 0 1" range="-0.698 0.698" actuatorfrcrange="-120 120"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_hip_roll_hull"/>
+        <body name="right_hip_yaw" pos="0 -0.017 -0.0682" quat="0.499998 0.5 -0.5 0.500002">
+          <inertial pos="-0.00012288 -0.0157646 0.108287" quat="0.706122 0.0255728 -0.0264516 0.707134" mass="3.79912" diaginertia="0.0144696 0.00941291 0.00694337"/>
+          <joint name="idx08_right_hip_yaw" pos="0 0 0" axis="0 0 1" range="-1.57 1.57" actuatorfrcrange="-120 120"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_hip_yaw_hull"/>
+          <body name="right_hip_pitch" pos="0 0.02 0.1205" quat="0.65328 0.653282 0.270598 -0.270599">
+            <inertial pos="-0.0694342 0.00469099 -0.0222824" quat="-0.000178007 0.740766 -0.037089 0.670738" mass="5.92462" diaginertia="0.0944 0.0889272 0.013068"/>
+            <joint name="idx09_right_hip_pitch" pos="0 0 0" axis="0 0 1" range="-1.91986 0.785398" actuatorfrcrange="-140 140"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="right_hip_pitch_hull"/>
+            <body name="right_tarsus" pos="-0.34 0 0">
+              <inertial pos="-0.16129 0.00783822 -0.0218469" quat="0.358259 0.600865 0.547347 0.459373" mass="3.44582" diaginertia="0.0471926 0.0389362 0.0133446"/>
+              <joint name="idx10_right_tarsus" pos="0 0 0" axis="0 0 1" range="-0.0872665 2.44346" actuatorfrcrange="-140 140"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="right_tarsus_hull"/>
+              <geom pos="-0.138 0 0.0315" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_toe_A_hull"/>
+              <geom pos="-0.136998 -0.062992 0.0315" quat="-3.67321e-06 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_toe_A_rod_hull"/>
+              <geom pos="-0.232 0 -0.0315" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_toe_B_hull"/>
+              <geom pos="-0.231 -0.062992 -0.0315" quat="-3.67321e-06 1 -5e-05 1.8366e-10" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_toe_B_rod_hull"/>
+              <body name="right_toe_pitch" pos="-0.377 0 0">
+                <inertial pos="0 0 0" quat="0.707107 0.707107 0 0" mass="0.0877203" diaginertia="1.572e-05 1.148e-05 1.128e-05"/>
+                <joint name="idx11_right_toe_pitch" pos="0 0 0" axis="0 0 1" range="-1.0472 0.523599" actuatorfrcrange="-50 50"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_toe_pitch_hull"/>
+                <body name="right_toe_roll" quat="0.707107 -0.707107 0 0">
+                  <inertial pos="-0.0389834 -2.335e-05 0.0316731" quat="0.999914 0.000251595 -0.0131242 -0.000140524" mass="1.21058" diaginertia="0.00701558 0.0065321 0.00111708"/>
+                  <joint name="idx12_right_toe_roll" pos="0 0 0" axis="0 0 1" range="-0.488692 0.488692" actuatorfrcrange="-50 50"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_toe_roll_hull"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="left_arm_link01" pos="-0.03779 0.191 0.3421" quat="0.5 0.5 0.5 -0.5">
+        <inertial pos="-0.00233 0.008782 0.03287" quat="0.80076 0.596937 0.0197785 -0.0453735" mass="0.276944" diaginertia="0.000595468 0.000557529 0.000365003"/>
+        <joint name="idx13_left_arm_joint1" pos="0 0 0" axis="0 0 1" range="-2.967 2.967"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_arm_link01_hull"/>
+        <body name="left_arm_link02" quat="0.707107 0.707107 0 0">
+          <inertial pos="-0.000451 -0.051682 -0.001084" quat="0.712661 0.701474 -0.00312372 0.00622207" mass="2.85211" diaginertia="0.0119842 0.0117112 0.00287761"/>
+          <joint name="idx14_left_arm_joint2" pos="0 0 0" axis="0 0 1" range="-0.523599 1.65806"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="left_arm_link02_hull"/>
+          <body name="left_arm_link03" pos="0 -0.154 0" quat="0.707107 0.707107 0 0">
+            <inertial pos="-0.000673 0.001065 0.079222" quat="0.689044 0.00401877 -0.00866288 0.724657" mass="1.31029" diaginertia="0.00218672 0.00202963 0.00118864"/>
+            <joint name="idx15_left_arm_joint3" pos="0 0 0" axis="0 0 1" range="-2.967 2.967"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="left_arm_link03_hull"/>
+            <body name="left_arm_link04" pos="0 0 0.093" quat="0.5 -0.5 -0.5 0.5">
+              <inertial pos="0.000273 -0.066853 -0.007408" quat="0.569875 0.324365 -0.373273 0.656275" mass="0.677343" diaginertia="0.000908766 0.000892685 0.000366549"/>
+              <joint name="idx16_left_arm_joint4" pos="0 0 0" axis="0 0 1" range="-2.0944 0"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_arm_link04_hull"/>
+              <body name="left_arm_link05" pos="0 -0.103 0" quat="0.707107 0.707107 0 0">
+                <inertial pos="-0.001962 -2e-06 0.071786" quat="0.999832 0 -0.0183036 0" mass="0.260886" diaginertia="0.000638549 0.000618 0.000228451"/>
+                <joint name="idx17_left_arm_joint5" pos="0 0 0" axis="0 0 1" range="-2.87979 2.87979"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="left_arm_link05_hull"/>
+                <geom pos="0.005 0.02245 0.0245" quat="0.00740679 0 -0.999973 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_wrist_motor_A_hull"/>
+                <geom pos="0.007 0.02245 0.1595" quat="0.999973 0 0.00740679 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_wrist_rod_A_hull"/>
+                <geom pos="0.005 -0.02245 0.0245" quat="0.00740679 0 -0.999973 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_wrist_motor_B_hull"/>
+                <geom pos="0.007 -0.02245 0.1595" quat="0.999973 0 0.00740679 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_wrist_rod_B_hull"/>
+                <body name="left_arm_link06" pos="-0.01 0 0.1595" quat="0.5 -0.5 0.5 0.5">
+                  <inertial pos="0.00018011 -0.00021701 0" mass="0.0250463" diaginertia="1.97e-06 1.73e-06 7.1e-07"/>
+                  <joint name="idx18_left_arm_joint6" pos="0 0 0" axis="0 0 1" range="-0.785398 0.785398"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_arm_link06_hull"/>
+                  <body name="left_arm_link07" quat="0.707107 0.707107 0 0">
+                    <inertial pos="-0.0121176 -9.712e-05 0.00886324" quat="0.00895438 0.582339 -0.00507479 0.812881" mass="0.0505022" diaginertia="1.35484e-05 1.14011e-05 7.6705e-06"/>
+                    <joint name="idx19_left_arm_joint7" pos="0 0 0" axis="0 0 1" range="-0.5236 0.5236"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="left_arm_link07_hull"/>
+                    <geom pos="0 0 0" quat="0.5 0.5 -0.5 -0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="left_hand_hull"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="right_arm_link01" pos="-0.03779 -0.191 0.3421" quat="0.5 0.5 0.5 -0.5">
+        <inertial pos="-0.00233 0.008782 -0.03287" quat="0.596937 0.80076 -0.0453735 0.0197785" mass="0.276944" diaginertia="0.000595468 0.000557529 0.000365003"/>
+        <joint name="idx20_right_arm_joint1" pos="0 0 0" axis="0 0 1" range="-2.967 2.967"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_arm_link01_hull"/>
+        <body name="right_arm_link02" quat="0.707107 0.707107 0 0">
+          <inertial pos="-0.000451 0.051682 -0.001084" quat="0.701474 0.712661 -0.00622207 0.00312372" mass="2.85211" diaginertia="0.0119842 0.0117112 0.00287761"/>
+          <joint name="idx21_right_arm_joint2" pos="0 0 0" axis="0 0 1" range="-1.65806 0.523599"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="right_arm_link02_hull"/>
+          <body name="right_arm_link03" pos="0 0.154 0" quat="0.707107 0.707107 0 0">
+            <inertial pos="-0.000673 0.001065 -0.079222" quat="0.689044 -0.00401877 0.00866288 0.724657" mass="1.31029" diaginertia="0.00218672 0.00202963 0.00118864"/>
+            <joint name="idx22_right_arm_joint3" pos="0 0 0" axis="0 0 1" range="-2.967 2.967"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="right_arm_link03_hull"/>
+            <body name="right_arm_link04" pos="0 0 -0.093" quat="0.5 -0.5 -0.5 0.5">
+              <inertial pos="0.000273 0.066853 -0.007408" quat="0.324365 0.569875 -0.656275 0.373273" mass="0.677343" diaginertia="0.000908766 0.000892685 0.000366549"/>
+              <joint name="idx23_right_arm_joint4" pos="0 0 0" axis="0 0 1" range="0 2.0944"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_arm_link04_hull"/>
+              <body name="right_arm_link05" pos="0 0.103 0" quat="0.707107 0.707107 0 0">
+                <inertial pos="-0.001962 -2e-06 -0.071786" quat="0.999832 0 0.0183036 0" mass="0.260886" diaginertia="0.000638549 0.000618 0.000228451"/>
+                <joint name="idx24_right_arm_joint5" pos="0 0 0" axis="0 0 1" range="-2.87979 2.87979"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="right_arm_link05_hull"/>
+                <geom pos="0.005 0.02245 -0.0245" quat="0.999973 0 -0.00740679 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_wrist_motor_A_hull"/>
+                <geom pos="0.007 0.02245 -0.1595" quat="0.00740679 0 0.999973 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_wrist_rod_A_hull"/>
+                <geom pos="0.005 -0.02245 -0.0245" quat="0.999973 0 -0.00740679 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_wrist_motor_B_hull"/>
+                <geom pos="0.007 -0.02245 -0.1595" quat="0.00740679 0 0.999973 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_wrist_rod_B_hull"/>
+                <body name="right_arm_link06" pos="-0.01 0 -0.1595" quat="0.5 -0.5 0.5 0.5">
+                  <inertial pos="-0.00018011 -0.00021701 0" mass="0.0250463" diaginertia="1.97e-06 1.73e-06 7.1e-07"/>
+                  <joint name="idx25_right_arm_joint6" pos="0 0 0" axis="0 0 1" range="-0.785398 0.785398"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_arm_link06_hull"/>
+                  <body name="right_arm_link07" quat="0.707107 0.707107 0 0">
+                    <inertial pos="0.0121176 -9.712e-05 0.00886324" quat="-0.00507479 0.812881 0.00895438 0.582339" mass="0.0505022" diaginertia="1.35484e-05 1.14011e-05 7.6705e-06"/>
+                    <joint name="idx26_right_arm_joint7" pos="0 0 0" axis="0 0 1" range="-0.5236 0.5236"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="right_arm_link07_hull"/>
+                    <geom pos="0 0 0" quat="0.5 -0.5 0.5 -0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.752941 0.752941 0.784314 1" mesh="right_hand_hull"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="head_link01" pos="-0.03779 0 0.4101">
+        <inertial pos="-0.00154008 0.00649494 0.116278" quat="0.625963 -0.0766544 -0.00607087 0.776053" mass="1.39889" diaginertia="0.00395685 0.00381351 0.00146744"/>
+        <joint name="idx27_head_joint1" pos="0 0 0" axis="0 0 1" range="-2.2 2.2"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="head_link01_hull"/>
+        <body name="head_link02" pos="-0.00501 0 0.16059" quat="0.707105 0.707108 0 0">
+          <inertial pos="0.0325653 0.0283404 9.476e-05" quat="0.637504 0.634244 0.307616 0.310959" mass="0.656069" diaginertia="0.00400814 0.00360951 0.00319009"/>
+          <joint name="idx28_head_joint2" pos="0 0 0" axis="0 0 1" range="-0.5 0.5"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.235294 0.235294 0.235294 1" mesh="head_link02_hull"/>
+        </body>
+      </body>
+    </body>
+    <body name="decision_beacon" pos="-1.75 0 0.12">
+      <joint name="decision_beacon_freejoint" type="free"/>
+      <geom name="decision_beacon_geom" size="0.065" rgba="0.1 0.9 1 0.95"/>
+    </body>
+    <body name="route_cursor" pos="-1.75 0 0.12">
+      <joint name="route_cursor_freejoint" type="free"/>
+      <geom name="route_cursor_geom" size="0.045" rgba="1 0.92 0.18 0.95"/>
+    </body>
+  </worldbody>
+</mujoco>
